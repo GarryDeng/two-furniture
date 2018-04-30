@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/relation.css">
+    <script src="./js/common.js"></script>
+    <script src="./js/jquery.2.1.4.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lU04ZCIYvdfNqby8ODky0Ii0z6XGGlxj"></script>
+    <title>联系我们</title>
+</head>
+
+<body>
+    <div class="common-head-menu">
+        <div class="menu-nav clear">
+            <a href="./">
+                <img class="fl logo" src="./images/logo.jpg" alt="">
+            </a>
+            <ul class="fr stair-menu">
+                <li>
+                    <a class="index" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a class="product" href="javascript:">产品展示</a>
+                    <div class="second-menu">
+                        <a href="product.html">酒店公共区域</a>
+                        <a href="product.html">酒店客房区域</a>
+                        <a href="product.html">酒店办公区域</a>
+                        <a href="product.html">别墅住家家具</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="case" href="javascript:">成功案例</a>
+                    <div class="second-menu">
+                        <a href="case.html">酒店</a>
+                        <a href="case.html">别墅</a>
+                        <a href="case.html">私人订制</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="about" href="javascript:">关于我们</a>
+                    <div class="second-menu">
+                        <a href="about-enterprise.html">企业介绍</a>
+                        <a href="about-business.html">主营业务</a>
+                        <a href="about-equipment.html">工厂全景
+                            <br/>设备展示</a>
+                    </div>
+                </li>
+                <li class="active">
+                    <a class="relation" href="relation.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="product-banner">
+        <img class="product-banner-img" src="./images/relation-banner.jpg" alt="">
+    </div>
+    <div class="relation-centent">
+        <div class="contact-we">联系我们</div>
+        <div class="contact-message">
+            <p class="call"><label>官方电话</label>：+86 769 81819553</p>
+            <p class="mail"><label>官方邮箱</label>：info@yushinefumiture.com</p>
+            <p class="fax"><label>传 真</label>：+86 769 81819556</p>
+            <p class="details">
+                <label>地 址</label>：
+                <span>东莞市石排镇向西工业区二路北<br/>
+                    No.6,Road2,Xiangxi Industral District,Shipai,Dongguan,Guangdong,523000,China.
+                </span>
+            </p>
+            <p class="postcode"><label>邮 编</label>：523000</p>
+        </div>
+        <!-- 百度地图 -->
+        <div class="address" id="container"></div>
+    </div>
+    <div class="footer">
+        <ul class="list-href">
+            <li>
+                <a href="">首页</a>
+            </li>
+            <li>
+                <a href="">关于我们</a>
+            </li>
+            <li>
+                <a href="">产品展示</a>
+            </li>
+            <li>
+                <a href="">成功案例</a>
+            </li>
+            <li>
+                <a href="">联系我们</a>
+            </li>
+        </ul>
+        <ul class="list-message clear">
+            <li class="phone">
+                <a href="">+86-769-81819553</a>
+            </li>
+            <li class="mailbox">
+                <a href="">info@yushinefumiture.com</a>
+            </li>
+            <li class="er-code clear">
+                <img class="img-code" src="./images/block-list.jpg" alt="">
+                <div class="attention">
+                    <p class="watch">关注微信二维码</p>
+                    <p class="get-more-message">获取更多优惠信息</p>
+                </div>
+            </li>
+        </ul>
+        <div class="copyright-message">
+            <a href="javascript:">Copyright © 218 光煜木制品有限公司 DONGGUAN GUANGYU WOOD FURNITURE CO.,LTD 版权所有</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript"> 
+    var map = new BMap.Map("container");
+    // 创建地图实例  
+    var point = new BMap.Point(113.975182, 23.10343);
+    // 创建点坐标  
+    map.centerAndZoom(point, 15);
+// 初始化地图，设置中心点坐标和地图级别  
+    var marker = new BMap.Marker(point);        // 创建标注    
+    map.addOverlay(marker);                     // 将标注添加到地图中 
+</script>
+</html>

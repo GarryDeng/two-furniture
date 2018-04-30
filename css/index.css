@@ -1,0 +1,457 @@
+.index-banner-head {
+  position: relative;
+  width: 100%;
+  height: 5.33333333rem;
+  overflow: hidden;
+}
+.swiper-container {
+  height: 100%;
+}
+.swiper-container .swiper-slide {
+  height: 5.33333333rem;
+}
+.swiper-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container a img {
+  width: 100%;
+  display: block;
+}
+.phone-index-case {
+  display: none;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 40px;
+}
+.swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+  opacity: 1;
+  background-color: #FFF;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 21px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+.index-background::before {
+  content: "";
+  background: url(../images/index-background.jpg) no-repeat center;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.index-our-features {
+  text-align: center;
+  font-size: 65px;
+  color: #FFF;
+  line-height: 450px;
+  height: 450px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+.index-enterprise-tent {
+  background: rgba(255, 255, 255, 0.7789);
+  height: 660px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 314px;
+}
+.index-enterprise-tent .tent {
+  padding-top: 172px;
+  padding-bottom: 138px;
+  max-width: 1478px;
+  margin: 0 auto;
+}
+.index-enterprise-tent .tent .list {
+  display: block;
+  margin-left: 132px;
+  position: relative;
+  text-align: left;
+  width: 270px;
+  height: 351px;
+  color: #FFF;
+  float: left;
+}
+.index-enterprise-tent .tent .list:first-child {
+  margin-left: 0;
+}
+.index-enterprise-tent .tent .list.integrity {
+  background: url(../images/woodiness01.png) no-repeat center;
+  background-size: cover;
+}
+.index-enterprise-tent .tent .list.public {
+  background: url(../images/woodiness02.png) no-repeat center;
+  background-size: cover;
+}
+.index-enterprise-tent .tent .list.specialty {
+  background: url(../images/woodiness03.png) no-repeat center;
+  background-size: cover;
+}
+.index-enterprise-tent .tent .list.technology {
+  background: url(../images/woodiness04.png) no-repeat center;
+  background-size: cover;
+}
+.index-enterprise-tent .tent .list .label {
+  padding-top: 46px;
+  line-height: 1em;
+  font-size: 72px;
+  text-indent: 24px;
+}
+.index-enterprise-tent .tent .list .title {
+  padding-left: 24px;
+  padding-top: 58px;
+  line-height: 1em;
+  font-size: 36px;
+}
+.index-enterprise-tent .tent .list .content {
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 27px;
+  padding-left: 24px;
+  padding-right: 22px;
+  text-align: justify;
+}
+.index-bed {
+  position: relative;
+  width: 100%;
+}
+.index-bed .bed {
+  width: 100%;
+  display: block;
+}
+.index-bed .specialty-context {
+  width: 1400px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 300px;
+}
+.index-bed .specialty-context .specialty-title {
+  line-height: 1em;
+  font-size: 36px;
+  color: #FFF;
+}
+.index-bed .specialty-context .specialty-content {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 1em;
+  padding-top: 45px;
+  width: 860px;
+}
+.index-bed .specialty-context .specialty-case {
+  display: block;
+  width: 185px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFF;
+  margin-top: 44px;
+  font-size: 16px;
+  background-color: #004938;
+}
+.index-block-list {
+  background-color: #FFF;
+  position: reltaive;
+  padding-bottom: 210px;
+}
+.index-block-list .index-product-list {
+  width: 1478px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.index-block-list .index-product-list .title {
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  line-height: 1em;
+  font-size: 64px;
+  padding-top: 116px;
+  padding-bottom: 150px;
+}
+.index-block-list .index-product-list .list {
+  position: relative;
+  width: 1504px;
+}
+.index-block-list .index-product-list .list li {
+  float: left;
+  margin-right: 26px;
+  padding-bottom: 50px;
+}
+.index-block-list .index-product-list .list li a {
+  display: block;
+  width: 350px;
+  height: 280px;
+}
+.index-block-list .index-product-list .list li a img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1530px) {
+  .index-enterprise-tent .tent {
+    max-width: 1140px;
+  }
+  .index-enterprise-tent .tent .list {
+    margin-left: 20px;
+  }
+  .specialty-context {
+    max-width: 1140px;
+  }
+  .index-block-list .index-product-list {
+    width: 1142px;
+  }
+  .index-block-list .index-product-list .list {
+    width: 1189px;
+  }
+  .index-block-list .index-product-list .list li {
+    margin-right: 46px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .index-our-features {
+    line-height: 222px;
+    height: 222px;
+    font-size: 48px;
+  }
+  .index-enterprise-tent {
+    height: 332px;
+    margin-bottom: 159px;
+  }
+  .index-enterprise-tent .tent {
+    padding-top: 29px;
+    max-width: 878px;
+  }
+  .index-enterprise-tent .tent .list {
+    height: 272px;
+    width: 209px;
+    margin-left: 14px;
+  }
+  .index-enterprise-tent .tent .list .label {
+    font-size: 62px;
+    padding-top: 32px;
+    text-indent: 16px;
+  }
+  .index-enterprise-tent .tent .list .title {
+    font-size: 30px;
+    padding-top: 19px;
+    padding-left: 16px;
+  }
+  .index-enterprise-tent .tent .list .content {
+    padding-left: 16px;
+    padding-top: 17px;
+  }
+  .index-bed .specialty-context {
+    width: 860px;
+    top: 148px;
+  }
+  .index-bed .specialty-context .specialty-title {
+    font-size: 30px;
+  }
+  .index-bed .specialty-context .specialty-content {
+    font-size: 16px;
+  }
+  .index-block-list .index-product-list {
+    width: 880px;
+  }
+  .index-block-list .index-product-list .title {
+    font-size: 48px;
+    padding-top: 111px;
+    padding-bottom: 116px;
+  }
+  .index-block-list .index-product-list .list {
+    width: 900px;
+  }
+  .index-block-list .index-product-list .list li {
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  .index-block-list .index-product-list .list li a {
+    width: 280px;
+    height: 224px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .index-enterprise-tent {
+    height: 270px;
+  }
+  .index-enterprise-tent .tent {
+    max-width: 690px;
+  }
+  .index-enterprise-tent .tent .list {
+    width: 162px;
+    height: 211.2px;
+  }
+  .index-enterprise-tent .tent .list .label {
+    font-size: 28px;
+    padding-top: 16px;
+    text-indent: 10px;
+  }
+  .index-enterprise-tent .tent .list .title {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .index-enterprise-tent .tent .list .content {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .index-bed .specialty-context {
+    width: 690px;
+    top: 99px;
+  }
+  .index-bed .specialty-context .specialty-content {
+    width: 100%;
+  }
+  .index-block-list {
+    padding-bottom: 120px;
+  }
+  .index-block-list .index-product-list {
+    width: 712px;
+  }
+  .index-block-list .index-product-list .list {
+    width: 732px;
+  }
+  .index-block-list .index-product-list .list li a {
+    width: 224px;
+    height: 179px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .index-banner-head {
+    padding-top: 1.6rem;
+    height: 6.93333333rem;
+  }
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 0.2rem;
+  }
+  .index-our-features {
+    display: none;
+  }
+  .index-enterprise-tent {
+    height: auto;
+    margin-bottom: 0;
+    background-color: transparent;
+  }
+  .index-enterprise-tent .tent {
+    padding: 0.50666667rem 0 0.37333333rem 0;
+  }
+  .index-enterprise-tent .tent .list {
+    width: 4.66666667rem;
+    height: 3.2rem;
+    -webkit-border-radius: .12rem;
+    border-radius: .12rem;
+    margin-left: 0.13333333rem;
+    margin-bottom: 0.13333333rem;
+  }
+  .index-enterprise-tent .tent .list:nth-child(2n-1) {
+    margin-left: 0.26666667rem;
+  }
+  .index-enterprise-tent .tent .list .label {
+    font-size: 0.85333333rem;
+    padding-top: 0.32rem;
+    text-indent: 0.4rem;
+  }
+  .index-enterprise-tent .tent .list .title {
+    font-size: 0.4rem;
+    padding-top: 0.13333333rem;
+    padding-left: 0.4rem;
+  }
+  .index-enterprise-tent .tent .list .content {
+    padding-top: 0.32rem;
+    font-size: 0.18666667rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    line-height: 1.3em;
+  }
+  .index-background {
+    background: #F0F0F0;
+  }
+  .index-background::before {
+    display: none;
+  }
+  .index-bed {
+    display: none;
+  }
+  .index-block-list {
+    display: none;
+  }
+  .phone-index-case {
+    display: block;
+    margin: 0 0.26666667rem;
+    background: #FFF;
+    margin-bottom: 0.26666667rem;
+  }
+  .phone-index-case .phone-case-title {
+    line-height: 1.06666667rem;
+    height: 1.06666667rem;
+  }
+  .phone-index-case .phone-case-title .fl {
+    color: #000;
+    font-size: 0.42666667rem;
+    padding-left: 0.90666667rem;
+  }
+  .phone-index-case .phone-case-title .fl.product {
+    background: url(../images/phone-product.png) no-repeat 0.28rem center;
+    background-size: 0.6rem auto;
+  }
+  .phone-index-case .phone-case-title .fl.case-success {
+    background: url(../images/phone-case.png) no-repeat 0.28rem center;
+    background-size: 0.50666667rem auto;
+  }
+  .phone-index-case .phone-case-title .fr {
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 0.26666667rem;
+    font-size: 0.26666667rem;
+  }
+  .phone-index-case .case .case-list {
+    display: block;
+    float: left;
+    margin-bottom: 0.33333333rem;
+    margin-left: 0.26666667rem;
+  }
+  .phone-index-case .case .case-list:nth-child(2n) {
+    margin-left: 0.4rem;
+  }
+  .phone-index-case .case .case-list img {
+    display: block;
+    width: 4.26666667rem;
+    height: 2.8rem;
+  }
+  .phone-index-case .case .case-list p {
+    color: #000;
+    font-size: 0.26666667rem;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 4.2rem;
+    height: 0.52rem;
+    line-height: 0.52rem;
+  }
+}

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/product.css">
@@ -13,25 +13,30 @@
 </head>
 
 <body>
+    <!-- 菜单start -->
     <div class="common-head-menu">
         <div class="menu-nav clear">
             <a href="./">
-                <img class="fl logo" src="./images/logo.jpg" alt="">
+                <img class="fl logo" src="./images/logo.png" alt="">
             </a>
+            <div class="phone-menu-line" style="display: none;">
+                <img class="line" src="./images/line.png" alt="">
+            </div>
             <ul class="fr stair-menu">
                 <li>
                     <a class="index" href="index.html">首页</a>
                 </li>
-                <li>
+                <li class="next-level">
                     <a class="product" href="javascript:">产品展示</a>
                     <div class="second-menu">
-                        <a href="product.html">酒店公共区域</a>
+                        <!-- active为选中状态 -->
+                        <a class="active" href="product.html">酒店公共区域</a>
                         <a href="product.html">酒店客房区域</a>
                         <a href="product.html">酒店办公区域</a>
                         <a href="product.html">别墅住家家具</a>
                     </div>
                 </li>
-                <li>
+                <li class="next-level">
                     <a class="case" href="javascript:">成功案例</a>
                     <div class="second-menu">
                         <a href="case.html">酒店</a>
@@ -39,12 +44,12 @@
                         <a href="case.html">私人订制</a>
                     </div>
                 </li>
-                <li class="active">
+                <li class="active next-level">
                     <a class="about" href="javascript:">关于我们</a>
                     <div class="second-menu">
                         <a href="about-enterprise.html">企业介绍</a>
                         <a href="about-business.html">主营业务</a>
-                        <a href="about-equipment.html">工厂全景
+                        <a class="active" href="about-equipment.html">工厂全景
                             <br/>设备展示</a>
                     </div>
                 </li>
@@ -54,6 +59,16 @@
             </ul>
         </div>
     </div>
+    <script>
+        $('.phone-menu-line').on('click', function () {
+            $('.stair-menu').slideToggle();
+        });
+        $('.next-level').on('click', function () {
+            if (document.documentElement.clientWidth > 750) return;
+            $(this).toggleClass('click-active').find('.second-menu').slideToggle();
+        })
+    </script>
+    <!-- 菜单end -->
     <div class="product-banner">
         <img class="product-banner-img" src="./images/product-banner.jpg" alt="">
     </div>
@@ -72,9 +87,12 @@
             </li>
         </ul>
         <div class="fr product-content-list">
-            <div class="target">当前位置 ：
-                <a href="">主页</a> ＞
-                <a href="">关于我们</a> ＞
+            <div class="target">
+                <span>
+                    当前位置 ：
+                    <a href="">主页</a> ＞
+                    <a href="">关于我们</a> ＞
+                </span>
                 <a href="">工厂全景及设备展示</a>
             </div>
             <ul class="content clear">
@@ -134,30 +152,33 @@
             </div>
         </div>
     </div>
+   <!-- footer底部start -->
     <div class="footer">
         <ul class="list-href">
             <li>
-                <a href="">首页</a>
+                <a href="./">首页</a>
             </li>
             <li>
-                <a href="">关于我们</a>
+                <a href="about-business.html">关于我们</a>
             </li>
             <li>
-                <a href="">产品展示</a>
+                <a href="product.html">产品展示</a>
             </li>
             <li>
-                <a href="">成功案例</a>
+                <a href="case.html">成功案例</a>
             </li>
             <li>
-                <a href="">联系我们</a>
+                <a href="relation.html">联系我们</a>
             </li>
         </ul>
         <ul class="list-message clear">
-            <li class="phone">
-                <a href="">+86-769-81819553</a>
-            </li>
-            <li class="mailbox">
-                <a href="">info@yushinefumiture.com</a>
+            <li class="clear">
+                <div class="phone">
+                    <a href="tel:769-81819553">+86-769-81819553</a>
+                </div>
+                <div class="mailbox">
+                    <a href="javascript:">info@yushinefumiture.com</a>
+                </div>
             </li>
             <li class="er-code clear">
                 <img class="img-code" src="./images/block-list.jpg" alt="">
@@ -171,6 +192,7 @@
             <a href="javascript:">Copyright © 218 光煜木制品有限公司 DONGGUAN GUANGYU WOOD FURNITURE CO.,LTD 版权所有</a>
         </div>
     </div>
+    <!-- footer底部end -->
 </body>
 
 </html>

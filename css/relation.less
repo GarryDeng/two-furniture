@@ -19,9 +19,15 @@
                 label{
                     letter-spacing: 14px;
                 }
-                span{
-                    display: inline-block;
-                    vertical-align: top;
+                // span{
+                //     display: inline-block;
+                //     vertical-align: top;
+                // }
+            }
+            &.details{
+                .english{
+                    display: block;
+                    padding-left: 134px;
                 }
             }
         }
@@ -31,5 +37,69 @@
         width: 100%;
         height: 628px;
         margin-bottom: 144px;
+    }
+}
+@media screen and (max-width: 1530px) {
+    .relation-centent{
+        width: 1250px;
+        .address{
+            height: 550px;
+        }
+    }
+}
+@media screen and (max-width: 1380px) {
+    .relation-centent{
+        width: 1070px;
+        .address{
+            height: 454px;
+        }
+    }
+}
+@media screen and (max-width: 1180px) {
+    .relation-centent{
+        width: 880px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .relation-centent{
+        max-width: 720px;
+        .address{
+            height: 373px;
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .product-banner{
+        padding-top: 1.6rem;
+    }
+    .relation-centent{
+        padding: 0 .3rem;
+        width: 10rem;
+        .contact-we{
+            font-size: 36/75rem;
+            padding: 41/75rem 0 25/75rem 0;
+        }
+        .contact-message{
+            font-size: 26/75rem;
+            padding-top: 35/75rem;
+            padding-bottom: 70/75rem;
+            p{
+                padding-bottom: 26/75rem;
+                &.fax,&.details,&.postcode{
+                    label{
+                        letter-spacing: 14/75rem;
+                    }
+                }
+                &.details{
+                    .english{
+                        padding-left: 134/75rem;
+                    }
+                }
+            }
+        }
+        .address{
+            padding-bottom: .3rem;
+            height: 394/75rem;
+        }
     }
 }

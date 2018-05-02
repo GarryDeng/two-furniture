@@ -35,9 +35,10 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
+    <!-- 菜单start -->
     <div class="common-head-menu">
         <div class="menu-nav clear">
-            <a href="./"><img class="fl logo" src="./images/logo.jpg" alt=""></a>
+            <a href="./"><img class="fl logo" src="./images/logo.png" alt=""></a>
             <div class="phone-menu-line" style="display: none;">
                 <img class="line" src="./images/line.png" alt="">
             </div>
@@ -82,9 +83,11 @@
             $('.stair-menu').slideToggle();
         });
         $('.next-level').on('click',function(){
+            if(document.documentElement.clientWidth>750) return;
             $(this).toggleClass('click-active').find('.second-menu').slideToggle();
         })
     </script>
+    <!-- 菜单end -->
     <div class="index-our-features">
         <p>OUR FEATURES</p>
     </div>
@@ -215,18 +218,19 @@
         </div>
     </div>
     <!-- 手机端成功案例end -->
+    <!-- footer底部start -->
     <div class="footer">
         <ul class="list-href">
-            <li><a href="">首页</a></li>
-            <li><a href="">关于我们</a></li>
-            <li><a href="">产品展示</a></li>
-            <li><a href="">成功案例</a></li>
-            <li><a href="">联系我们</a></li>
+            <li><a href="./">首页</a></li>
+            <li><a href="about-business.html">关于我们</a></li>
+            <li><a href="product.html">产品展示</a></li>
+            <li><a href="case.html">成功案例</a></li>
+            <li><a href="relation.html">联系我们</a></li>
         </ul>
         <ul class="list-message clear">
             <li class="clear">
-                <div class="phone"><a href="">+86-769-81819553</a></div>
-                <div class="mailbox"><a href="">info@yushinefumiture.com</a></div>
+                <div class="phone"><a href="tel:769-81819553">+86-769-81819553</a></div>
+                <div class="mailbox"><a href="javascript:">info@yushinefumiture.com</a></div>
             </li>
             <li class="er-code clear">
                 <img class="img-code" src="./images/block-list.jpg" alt="">
@@ -240,6 +244,7 @@
             <a href="javascript:">Copyright © 218 光煜木制品有限公司 DONGGUAN GUANGYU WOOD FURNITURE CO.,LTD 版权所有</a>
         </div>
     </div>
+    <!-- footer底部end -->
 </body>
 <script>
     var mySwiper = new Swiper('.swiper-container', {

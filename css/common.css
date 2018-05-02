@@ -155,6 +155,13 @@ body {
   position: relative;
   line-height: 20px;
   padding: 10px 0;
+  color: #FFF;
+}
+.common-head-menu .stair-menu li .second-menu a.active {
+  color: #21604A;
+}
+.common-head-menu .stair-menu li .second-menu a:hover {
+  color: #21604A;
 }
 .common-head-menu .stair-menu li .second-menu a::after {
   content: "";
@@ -317,8 +324,8 @@ body {
     line-height: 120px;
   }
   .common-head-menu .menu-nav .logo {
-    padding-top: 22px;
-    height: 75px;
+    padding-top: 27px;
+    height: 65px;
   }
   .common-head-menu .stair-menu li a {
     font-size: 22px;
@@ -362,7 +369,7 @@ body {
     padding-left: 42px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .common-head-menu {
     height: 100px;
     line-height: 100px;

@@ -23,15 +23,75 @@
 .relation-centent .contact-message p.postcode label {
   letter-spacing: 14px;
 }
-.relation-centent .contact-message p.fax span,
-.relation-centent .contact-message p.details span,
-.relation-centent .contact-message p.postcode span {
-  display: inline-block;
-  vertical-align: top;
+.relation-centent .contact-message p.details .english {
+  display: block;
+  padding-left: 134px;
 }
 .relation-centent .address {
   position: relative;
   width: 100%;
   height: 628px;
   margin-bottom: 144px;
+}
+@media screen and (max-width: 1530px) {
+  .relation-centent {
+    width: 1250px;
+  }
+  .relation-centent .address {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .relation-centent {
+    width: 1070px;
+  }
+  .relation-centent .address {
+    height: 454px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .relation-centent {
+    width: 880px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .relation-centent {
+    max-width: 720px;
+  }
+  .relation-centent .address {
+    height: 373px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .product-banner {
+    padding-top: 1.6rem;
+  }
+  .relation-centent {
+    padding: 0 .3rem;
+    width: 10rem;
+  }
+  .relation-centent .contact-we {
+    font-size: 0.48rem;
+    padding: 0.54666667rem 0 0.33333333rem 0;
+  }
+  .relation-centent .contact-message {
+    font-size: 0.34666667rem;
+    padding-top: 0.46666667rem;
+    padding-bottom: 0.93333333rem;
+  }
+  .relation-centent .contact-message p {
+    padding-bottom: 0.34666667rem;
+  }
+  .relation-centent .contact-message p.fax label,
+  .relation-centent .contact-message p.details label,
+  .relation-centent .contact-message p.postcode label {
+    letter-spacing: 0.18666667rem;
+  }
+  .relation-centent .contact-message p.details .english {
+    padding-left: 1.78666667rem;
+  }
+  .relation-centent .address {
+    padding-bottom: .3rem;
+    height: 5.25333333rem;
+  }
 }

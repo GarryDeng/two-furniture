@@ -90,6 +90,9 @@ body {
       &:first-child{
         margin-left: 0;
       }
+      &.english-pc-none{
+        display: none;
+      }
       a{
         color: #FFF;
         font-size: 26px;
@@ -180,7 +183,7 @@ body {
     li{
       // float: left;
       display: inline-block;
-      margin-left: 250px;
+      margin-left: 186px;
       line-height: 1em;
       &:first-child{
         margin-left: 0;
@@ -286,24 +289,26 @@ body {
             margin-left: 63px;
         }
     }
-    .footer .list-href{
+    .footer{
+      .list-href{
         &::before {
             width: 1142px;
             margin-left: -1142/2px;
         }
         li{
-            margin-left: 160px;
+            margin-left: 112px;
         }
-    }
-    .footer .list-message{
-        li{
-            .phone{
-              margin-right: 48px;
-            }
-            .mailbox{
-              margin-right: 22px;
-            }
-        }
+      }
+      .list-message{
+          li{
+              .phone{
+                margin-right: 48px;
+              }
+              .mailbox{
+                margin-right: 22px;
+              }
+          }
+      }
     }
 }
 @media screen and (max-width: 1180px) {
@@ -334,7 +339,7 @@ body {
         margin-left: -440px;
       }
       li{
-        margin-left: 120px;
+        margin-left: 86px;
         a{
           font-size: 20px;
         }
@@ -390,7 +395,7 @@ body {
         margin-left: -375px;
       }
       li{
-        margin-left: 70px;
+        margin-left: 56px;
         a{
           font-size: 20px;
         }
@@ -490,6 +495,9 @@ body {
             // .second-menu{
             //   display: block;
             // }
+          }
+          &.english-pc-none{
+            display: block;
           }
           a{
             display: block;

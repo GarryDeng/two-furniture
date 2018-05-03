@@ -22,6 +22,11 @@
 .phone-index-case {
   display: none;
 }
+.index-public-features {
+  background: url(../images/index-background.jpg) no-repeat center;
+  background-size: cover;
+  height: 1426px;
+}
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -41,7 +46,7 @@
 }
 .index-background::before {
   content: "";
-  background: url(../images/index-background.jpg) no-repeat center;
+  background: url(../images/index-bed.jpg) no-repeat center;
   background-size: cover;
   position: fixed;
   z-index: -1;
@@ -69,7 +74,6 @@
   height: 660px;
   position: relative;
   text-align: center;
-  margin-bottom: 314px;
 }
 .index-enterprise-tent .tent {
   padding-top: 172px;
@@ -224,6 +228,9 @@
   }
 }
 @media screen and (max-width: 1180px) {
+  .index-public-features {
+    height: 823px;
+  }
   .index-our-features {
     line-height: 222px;
     height: 222px;
@@ -231,7 +238,6 @@
   }
   .index-enterprise-tent {
     height: 332px;
-    margin-bottom: 159px;
   }
   .index-enterprise-tent .tent {
     padding-top: 29px;
@@ -287,6 +293,9 @@
   }
 }
 @media screen and (max-width: 900px) {
+  .index-public-features {
+    height: 607px;
+  }
   .index-enterprise-tent {
     height: 270px;
   }
@@ -334,6 +343,10 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .index-public-features {
+    background: transparent;
+    height: auto;
+  }
   .index-banner-head {
     padding-top: 1.6rem;
     height: 6.93333333rem;
@@ -355,7 +368,6 @@
   }
   .index-enterprise-tent {
     height: auto;
-    margin-bottom: 0;
     background-color: transparent;
   }
   .index-enterprise-tent .tent {

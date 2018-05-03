@@ -184,6 +184,7 @@
   width: 200px;
   height: 160px;
   opacity: .7;
+  cursor: pointer;
 }
 .product-details-date .swiper-container .swiper-slide.active {
   opacity: 1;

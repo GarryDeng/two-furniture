@@ -58,6 +58,9 @@
                 <li>
                     <a class="relation" href="relation.html">联系我们</a>
                 </li>
+                <li class="english-pc-none">
+                    <a class="english" href="">英文版</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -102,9 +105,29 @@
                     <div class="title">柏悦万豪酒店</div>
                     <p class="author-date">作者：admin 2018-02-03</p>
                     <div class="details-content">
-                        <img src="./images/product-details.jpg" alt="">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/product-details.jpg" alt="1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/product-details.jpg" alt="2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/product-details.jpg" alt="3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/product-details.jpg" alt="4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/product-details.jpg" alt="5">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/product-details.jpg" alt="6">
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- 下方滚动栏start -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -130,15 +153,31 @@
                     <div class="swiper-button-prev swiper-button-black"></div>
                     <div class="swiper-button-next swiper-button-black"></div>
                 </div>
-                <script language="javascript"> 
+                <!-- 下方滚动栏end -->
+                <script language="javascript">
+                    var imgRight = 53;
+                    if (document.documentElement.clientWidth <= 1180) imgRight = 18;
+                    if (document.documentElement.clientWidth <= 950) imgRight = 10;
+                    // if(document.documentElement.clientWidth <=750) imgRight = 18/75+'rem';
                     var mySwiper = new Swiper('.swiper-container', {
                         slidesPerView: 4,
-                        spaceBetween: 53,
+                        spaceBetween: imgRight,
                         navigation: {
                             nextEl: '.swiper-button-next',
                             prevEl: '.swiper-button-prev',
                         },
+                    });
+                    var myContent = new Swiper('.details-content', {
+                        simulateTouch: false,//禁止鼠标模拟
+                    });
+                    myContent.slideTo($('.swiper-container .active').index());
+                    $('.swiper-container .swiper-slide').on('click', function () {
+                        $(this).addClass('active').siblings('.swiper-slide').removeClass('active');
+                        var IndexLingth = $('.swiper-container .active').index();
+                        myContent.slideTo(IndexLingth);
+                        // $('.details-content').find('img').eq(IndexLingth).show(0).siblings('img').hide(0);
                     })
+
                 </script>
             </div>
         </div>
@@ -160,6 +199,9 @@
             </li>
             <li>
                 <a href="relation.html">联系我们</a>
+            </li>
+            <li>
+                <a href="">英文版</a>
             </li>
         </ul>
         <ul class="list-message clear">

@@ -125,6 +125,9 @@ body {
 .common-head-menu .stair-menu li:first-child {
   margin-left: 0;
 }
+.common-head-menu .stair-menu li.english-pc-none {
+  display: none;
+}
 .common-head-menu .stair-menu li a {
   color: #FFF;
   font-size: 26px;
@@ -204,7 +207,7 @@ body {
 }
 .footer .list-href li {
   display: inline-block;
-  margin-left: 250px;
+  margin-left: 186px;
   line-height: 1em;
 }
 .footer .list-href li:first-child {
@@ -309,7 +312,7 @@ body {
     margin-left: -571px;
   }
   .footer .list-href li {
-    margin-left: 160px;
+    margin-left: 112px;
   }
   .footer .list-message li .phone {
     margin-right: 48px;
@@ -344,7 +347,7 @@ body {
     margin-left: -440px;
   }
   .footer .list-href li {
-    margin-left: 120px;
+    margin-left: 86px;
   }
   .footer .list-href li a {
     font-size: 20px;
@@ -398,7 +401,7 @@ body {
     margin-left: -375px;
   }
   .footer .list-href li {
-    margin-left: 70px;
+    margin-left: 56px;
   }
   .footer .list-href li a {
     font-size: 20px;
@@ -497,6 +500,9 @@ body {
   }
   .common-head-menu .menu-nav .stair-menu li.click-active::before {
     display: none;
+  }
+  .common-head-menu .menu-nav .stair-menu li.english-pc-none {
+    display: block;
   }
   .common-head-menu .menu-nav .stair-menu li a {
     display: block;

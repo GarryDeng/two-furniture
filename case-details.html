@@ -170,14 +170,32 @@
                     var myContent = new Swiper('.details-content', {
                         simulateTouch: false,//禁止鼠标模拟
                     });
-                    myContent.slideTo($('.swiper-container .active').index());
+                   myContent.slideTo($('.swiper-container .active').index());
                     $('.swiper-container .swiper-slide').on('click', function () {
                         $(this).addClass('active').siblings('.swiper-slide').removeClass('active');
                         var IndexLingth = $('.swiper-container .active').index();
                         myContent.slideTo(IndexLingth);
-                        // $('.details-content').find('img').eq(IndexLingth).show(0).siblings('img').hide(0);
+                    });
+                    $(".product-details-date .swiper-container .swiper-button-next").on('click', function () {
+                        var IndexLingth = $('.swiper-container .active').index() + 1;
+                        myContent.slideTo(IndexLingth);
+                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
+                    });
+                    $(".product-details-date .swiper-container .swiper-button-prev").on('click', function () {
+                        var IndexLingth = $('.swiper-container .active').index() - 1;
+                        myContent.slideTo(IndexLingth);
+                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
                     })
-
+                    $(".product-details-date .details-content .swiper-button-next").on('click', function () {
+                        var IndexLingth = $('.swiper-container .active').index() + 1;
+                        mySwiper.slideTo(IndexLingth);
+                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
+                    });
+                    $(".product-details-date .details-content .swiper-button-prev").on('click', function () {
+                        var IndexLingth = $('.swiper-container .active').index() - 1;
+                        mySwiper.slideTo(IndexLingth);
+                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
+                    })
                 </script>
             </div>
         </div>

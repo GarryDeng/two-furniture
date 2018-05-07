@@ -109,44 +109,46 @@
                                 <img src="./images/product-details.jpg" alt="1">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="2">
+                                <img src="./images/relation-banner.jpg" alt="2">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="3">
+                                <img src="./images/index-bed.jpg" alt="3">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="4">
+                                <img src="./images/logo.jpg" alt="4">
                             </div>
                             <div class="swiper-slide">
                                 <img src="./images/product-details.jpg" alt="5">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="6">
+                                <img src="./images/about-banner.jpg" alt="6">
                             </div>
                         </div>
+                        <!-- <div class="swiper-button-prev swiper-button-black"></div>
+                        <div class="swiper-button-next swiper-button-black"></div> -->
                     </div>
                 </div>
                 <!-- 下方滚动栏start -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./images/block-list.jpg" alt="">
-                        </div>
-                        <!-- active为选中状态 -->
                         <div class="swiper-slide active">
                             <img src="./images/block-list.jpg" alt="">
                         </div>
+                        <!-- active为选中状态 -->
                         <div class="swiper-slide">
-                            <img src="./images/block-list.jpg" alt="">
+                            <img src="./images/relation-banner.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/index-bed.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/logo.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
                             <img src="./images/block-list.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./images/block-list.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/block-list.jpg" alt="">
+                            <img src="./images/about-banner.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-button-prev swiper-button-black"></div>
@@ -157,7 +159,6 @@
                     var imgRight = 53;
                     if(document.documentElement.clientWidth <=1180) imgRight = 18;
                     if(document.documentElement.clientWidth <=950) imgRight = 10;
-                    // if(document.documentElement.clientWidth <=750) imgRight = 18/75+'rem';
                     var mySwiper = new Swiper('.swiper-container', {
                         slidesPerView: 4,
                         spaceBetween: imgRight,
@@ -168,13 +169,36 @@
                     });
                      var myContent = new Swiper('.details-content', {
                         simulateTouch: false,//禁止鼠标模拟
+                        // navigation: {
+                        //      nextEl: '.swiper-button-next',
+                        //      prevEl: '.swiper-button-prev',
+                        // },
                     });
                     myContent.slideTo($('.swiper-container .active').index());
                     $('.swiper-container .swiper-slide').on('click',function(){
                         $(this).addClass('active').siblings('.swiper-slide').removeClass('active');
                         var IndexLingth = $('.swiper-container .active').index();
                         myContent.slideTo(IndexLingth);
-                        // $('.details-content').find('img').eq(IndexLingth).show(0).siblings('img').hide(0);
+                    });
+                    $(".product-details-date .swiper-container .swiper-button-next").on('click',function(){
+                        var IndexLingth = $('.swiper-container .active').index() + 1;
+                        myContent.slideTo(IndexLingth);
+                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
+                    });
+                    $(".product-details-date .swiper-container .swiper-button-prev").on('click', function () {
+                        var IndexLingth = $('.swiper-container .active').index() - 1;
+                        myContent.slideTo(IndexLingth);
+                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
+                    })
+                    $(".product-details-date .details-content .swiper-button-next").on('click', function () {
+                        var IndexLingth = $('.swiper-container .active').index() + 1;
+                        mySwiper.slideTo(IndexLingth);
+                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
+                    });
+                    $(".product-details-date .details-content .swiper-button-prev").on('click', function () {
+                        var IndexLingth = $('.swiper-container .active').index() - 1;
+                        mySwiper.slideTo(IndexLingth);
+                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
                     })
                     
                 </script>

@@ -153,11 +153,12 @@
 .product-details-date .details-content {
   position: relative;
   padding-bottom: 50px;
-  height: 4.5rem;
+  height: 4.3rem;
 }
 .product-details-date .details-content .swiper-slide {
   text-align: center;
-  line-height: 4.5rem;
+  line-height: 4.3rem;
+  height: 4.3rem;
 }
 .product-details-date .details-content img {
   max-width: 100%;
@@ -195,14 +196,16 @@
   cursor: pointer;
   border: 1px solid #ccc;
   text-align: center;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
   font-size: 0;
 }
 .product-details-date .swiper-container .swiper-slide.active {
   opacity: 1;
 }
 .product-details-date .swiper-container .swiper-slide img {
-  max-width: 96%;
-  max-height: 96%;
+  max-width: 100%;
+  max-height: 100%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -391,7 +394,8 @@
     padding-bottom: 0.45333333rem;
   }
   .product-details-date .details-content {
-    padding-bottom: 0.26666667rem;
+    padding-bottom: 0;
+    margin-bottom: 0.26666667rem;
   }
   .product-details-date .swiper-container {
     padding: 0;

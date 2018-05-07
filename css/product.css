@@ -405,6 +405,8 @@
     width: 2.13333333rem;
     height: 1.70666667rem;
     line-height: 1.70666667rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
   .product-details-date .swiper-container::after,
   .product-details-date .swiper-container::before {

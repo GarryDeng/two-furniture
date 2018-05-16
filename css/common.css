@@ -97,8 +97,8 @@ body {
   font-size: 20px;
 }
 .common-head-menu {
-  height: 160px;
-  line-height: 160px;
+  height: 140px;
+  line-height: 140px;
   text-align: center;
   background-color: #080706;
 }
@@ -130,7 +130,7 @@ body {
 }
 .common-head-menu .stair-menu li a {
   color: #FFF;
-  font-size: 26px;
+  font-size: 24px;
 }
 .common-head-menu .stair-menu li a:hover {
   color: #21604A;
@@ -145,7 +145,7 @@ body {
 .common-head-menu .stair-menu li .second-menu {
   display: none;
   position: absolute;
-  top: 160px;
+  top: 140px;
   background-color: #080706;
   left: 50%;
   margin-left: -80px;
@@ -215,7 +215,7 @@ body {
 }
 .footer .list-href li a {
   color: #FFF;
-  font-size: 26px;
+  font-size: 22px;
 }
 .footer .list-href li a:hover {
   color: #21604A;
@@ -244,7 +244,7 @@ body {
   background: url(../images/phone.png) no-repeat left center;
 }
 .footer .list-message li .phone a {
-  font-size: 36px;
+  font-size: 32px;
 }
 .footer .list-message li .mailbox {
   float: left;
@@ -481,8 +481,17 @@ body {
     width: 100%;
     height: auto;
     background-color: #080706;
-    border-top: 1px solid #FFF;
     padding-right: 0;
+  }
+  .common-head-menu .menu-nav .stair-menu::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: scaleY(0.33333333);
   }
   .common-head-menu .menu-nav .stair-menu li {
     float: none;
@@ -520,6 +529,7 @@ body {
     position: absolute;
     bottom: -1px;
     border-bottom: 1px solid #FFF;
+    transform: scaleY(0.33333333);
   }
   .common-head-menu .menu-nav .stair-menu li:last-child::before {
     display: none;
@@ -544,6 +554,18 @@ body {
     padding-left: 0.64rem;
     background: url(../images/go-to.png) no-repeat 0.18666667rem center;
     background-size: 0.32rem auto;
+  }
+  .common-head-menu .menu-nav .stair-menu li .second-menu a:nth-child(2n) {
+    width: 30%;
+    margin-left: 20%;
+  }
+  .common-head-menu .menu-nav .stair-menu li .second-menu a::after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
   .common-head-menu .menu-nav .stair-menu li .second-menu::after {
     content: '';

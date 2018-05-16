@@ -63,8 +63,8 @@ body {
 }
 // 导航栏菜单
 .common-head-menu{
-  height: 160px;
-  line-height: 160px;
+  height: 140px;
+  line-height: 140px;
   text-align: center;
   background-color: #080706;
   .menu-nav{
@@ -95,7 +95,7 @@ body {
       }
       a{
         color: #FFF;
-        font-size: 26px;
+        font-size: 24px;
         &:hover{
           color: #21604A;
           text-decoration: none;
@@ -112,7 +112,7 @@ body {
       .second-menu{
         display: none;
         position: absolute;
-        top: 160px;
+        top: 140px;
         background-color: #080706;
         left: 50%;
         margin-left: -80px;
@@ -190,7 +190,7 @@ body {
       }
       a{
         color: #FFF;
-        font-size: 26px;
+        font-size: 22px;
         &:hover{
           color: #21604A;
           text-decoration: none;
@@ -218,7 +218,7 @@ body {
         padding-left: 50+28px;
         background: url(../images/phone.png) no-repeat left center;
         a{
-          font-size: 36px;
+          font-size: 32px;
         }
       }
       .mailbox{
@@ -475,8 +475,18 @@ body {
         width: 100%;
         height: auto;
         background-color: #080706;
-        border-top: 1px solid #FFF;
+        // border-top: 1px solid #FFF;
         padding-right: 0;
+        &::before{
+          content: "";
+          display: block;
+          border-top: 1px solid #FFF;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          transform: scaleY(.333333333);
+        }
         li{
           float: none;
           margin-left: 0;
@@ -515,6 +525,7 @@ body {
             position: absolute;
             bottom: -1px;
             border-bottom: 1px solid #FFF;
+            transform: scaleY(.333333333);
           }
           &:last-child{
             &::before{
@@ -540,6 +551,18 @@ body {
               padding-left: 48/75rem;
               background: url(../images/go-to.png) no-repeat 14/75rem center;
               background-size: 24/75rem auto;
+              &:nth-child(2n){
+                width: 30%;
+                margin-left: 20%;
+              }
+              &::after {
+                content: '';
+                clear: both;
+                display: block;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+              }
             }
             &::after {
                 content: '';

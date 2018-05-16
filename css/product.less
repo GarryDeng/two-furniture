@@ -64,6 +64,16 @@
                     color: #21604A;
                 }
             }
+            .position-absolute-right{
+                position: absolute;
+                display: none;
+                width: 40/75rem;
+                height: 40/75rem;
+                background: url(../images/go-to.png) no-repeat center;
+                background-size: 100%;
+                right: 0;
+                top: .4rem;
+            }
         }
         .content{
             padding-top: 50px;
@@ -75,7 +85,7 @@
                 margin-bottom: 32-18px;
                 a{
                     color: #000;
-                    img{
+                    i{
                         width: 350px;
                         height: 280px;
                         display: block;
@@ -274,7 +284,7 @@
                 li{
                     margin-right: 20px;
                     a{
-                        img{
+                        i{
                             width: 280px;
                             height: 224px;
                         }
@@ -304,7 +314,7 @@
                     margin-right: 16px;
                     margin-bottom: 8px;
                     a{
-                        img{
+                        i{
                             width: 280*0.78px;
                             height: 224*0.78px;
                         }
@@ -353,12 +363,16 @@
             width: 100%;
             .target{
                 padding: 0;
+                border-bottom: 1px solid #000;
                 span{
                     display: none;
                 }
                 a{
                     font-size: 36/75rem;
                     line-height: 102/75rem;
+                }
+                .position-absolute-right{
+                    display: block;
                 }
             }
             .about-business-list{
@@ -383,7 +397,7 @@
                     margin-right: 30/75rem;
                     margin-bottom: 25/75rem;
                     a{
-                        img{
+                        i{
                             width: 340/75rem;
                             height: 223/75rem;
                         }
@@ -420,6 +434,9 @@
     }
     .product-banner{
         padding-top: 1.6rem;
+        img.product-banner-img{
+            display: none;
+        }
     }
     .product-details-date{
         padding-bottom: .3rem;
@@ -430,20 +447,38 @@
         }
         .author-date{
             padding-bottom: 34/75rem;
+            font-size: 16/75rem;
         }
         .details-content{
             padding-bottom: 0;
             margin-bottom: 20/75rem;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+            width: 9.4rem;
+            img{
+                width: 100%;
+                height: auto;
+                max-height: none;
+                max-height: none;
+                display: block;
+            }
+            .swiper-slide{
+                height: auto;
+                line-height: normal;
+            }
         }
         .swiper-container{
             padding: 0;
             width: 9.4rem;
+            height: auto;
             .swiper-slide{
                 width: 160/75rem;
                 height: 128/75rem;
                 line-height: 128/75rem;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
+                border: none;
             }
             &::after,&::before{
                 display: none;

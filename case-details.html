@@ -113,7 +113,7 @@
                                 <img src="./images/product-details.jpg" alt="2">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="3">
+                                <img src="./images/index-bed.jpg" alt="3">
                             </div>
                             <div class="swiper-slide">
                                 <img src="./images/product-details.jpg" alt="4">
@@ -130,24 +130,25 @@
                 <!-- 下方滚动栏start -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./images/block-list.jpg" alt="">
+                        <!-- 图片变动到上层的style样式中 -->
+                        <div class="swiper-slide" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
+                            <!-- <img src="./images/block-list.jpg" alt=""> -->
                         </div>
                         <!-- active为选中状态 -->
-                        <div class="swiper-slide active">
-                            <img src="./images/block-list.jpg" alt="">
+                        <div class="swiper-slide active" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
+                            <!-- <img src="" alt=""> -->
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./images/block-list.jpg" alt="">
+                        <div class="swiper-slide" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
+                            <!-- <img src="./images/block-list.jpg" alt=""> -->
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./images/block-list.jpg" alt="">
+                        <div class="swiper-slide" style="background: url(./images/index-bed.jpg) no-repeat center;background-size: cover;">
+                            <!-- <img src="./images/block-list.jpg" alt=""> -->
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./images/block-list.jpg" alt="">
+                        <div class="swiper-slide" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
+                            <!-- <img src="./images/block-list.jpg" alt=""> -->
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./images/block-list.jpg" alt="">
+                        <div class="swiper-slide" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
+                            <!-- <img src="./images/block-list.jpg" alt=""> -->
                         </div>
                     </div>
                     <div class="swiper-button-prev swiper-button-black"></div>
@@ -169,6 +170,18 @@
                     });
                     var myContent = new Swiper('.details-content', {
                         simulateTouch: false,//禁止鼠标模拟
+                        // 2018-5-16添加start
+                        autoHeight: true, //高度随内容变化
+                        on: {
+                            slideChangeTransitionStart: function () {
+                                //你的事件
+                                var IndexLingth = this.activeIndex;
+                                console.log(IndexLingth)
+                                mySwiper.slideTo(IndexLingth);
+                                $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
+                            },
+                        },
+                        // 2018-5-16添加end
                     });
                    myContent.slideTo($('.swiper-container .active').index());
                     $('.swiper-container .swiper-slide').on('click', function () {

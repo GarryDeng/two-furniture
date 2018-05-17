@@ -111,6 +111,7 @@ body {
 .common-head-menu .menu-nav .logo {
   padding-top: 30px;
   padding-left: 30px;
+  height: 80px;
 }
 .common-head-menu .stair-menu {
   padding-right: 30px;
@@ -199,8 +200,8 @@ body {
   display: block;
   position: absolute;
   left: 50%;
-  width: 1500px;
-  margin-left: -750px;
+  width: 1430px;
+  margin-left: -715px;
   bottom: -3px;
   background-color: #CDCDCD;
   height: 3px;
@@ -308,8 +309,8 @@ body {
     margin-left: 63px;
   }
   .footer .list-href::before {
-    width: 1142px;
-    margin-left: -571px;
+    width: 1060px;
+    margin-left: -530px;
   }
   .footer .list-href li {
     margin-left: 112px;
@@ -397,8 +398,8 @@ body {
     padding-bottom: 60px;
   }
   .footer .list-href::before {
-    width: 750px;
-    margin-left: -375px;
+    width: 728px;
+    margin-left: -364px;
   }
   .footer .list-href li {
     margin-left: 56px;

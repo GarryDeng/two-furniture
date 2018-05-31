@@ -1,7 +1,7 @@
 .index-banner-head{
     position: relative;
     width: 100%;
-    height: 1024/192rem;
+    height: 730/192rem;
     overflow: hidden;
 }
 .swiper-container{
@@ -22,345 +22,239 @@
 .phone-index-case{
     display: none;
 }
-.index-public-features{
-    background: url(../images/index-background.jpg) no-repeat center;
-    background-size: cover;
-    height: 1426px;
-}
+
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom: 40px;
 }
 .swiper-pagination-bullet{
-    height:15px;
-    width: 15px;
+    height:6px;
+    width: 30px;
     opacity: 1;
     background-color: #FFF;
+    border-radius: 3px;
+}
+.swiper-button-next, .swiper-button-prev{
+    background-color: rgba(0, 0, 0, .3);
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 30px 38px;
+    border-radius: 50%;
+}
+.swiper-button-next{
+    right: 39px;
+}
+.swiper-button-prev{
+    left: 39px;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
-    margin: 0 21px;
+    margin: 0 8px;
 }
 .swiper-pagination-bullet-active{
     background-color: #000;
 }
-.index-background::before{
-    content: "";
-    background: url(../images/index-bed.jpg) no-repeat center;
-    background-size: cover;
-    position: fixed;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-.index-our-features{
-    text-align: center;
-    font-size: 65px;
-    color: #FFF;
-    line-height: 450px;
-    height: 450px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    font-weight: bold;
-    position: relative;
-    overflow: hidden;
-}
-.index-enterprise-tent{
-    background: rgba(255, 255, 255, .7789);
-    height: 660px;
-    position: relative;
-    text-align: center;
-    // margin-bottom: 314px;
-    .tent{
-        padding-top: 172px;
-        padding-bottom: 138px;
-        max-width: 1478px;
-        margin: 0 auto;
-        .list{
-            display: block;
-            margin-left: 132px;
-            position: relative;
-            text-align: left;
-            width: 270px;
-            height: 351px;
-            color: #FFF;
-            float: left;
-            &:first-child{
-                margin-left: 0;
-            }
-            &.integrity{
-                background: url(../images/woodiness01.png) no-repeat center;
-                background-size: cover;
-            }
-            &.public{
-                background: url(../images/woodiness02.png) no-repeat center;
-                background-size: cover;
-            }
-            &.specialty{
-                background: url(../images/woodiness03.png) no-repeat center;
-                background-size: cover;
-            }
-            &.technology{
-                background: url(../images/woodiness04.png) no-repeat center;
-                background-size: cover;
-            }
-            .label{
-                padding-top: 46px;
-                line-height: 1em;
-                font-size: 72px;
-                text-indent: 24px;
-            }
-            .title{
-                padding-left: 24px;
-                padding-top: 58px;
-                line-height: 1em;
-                font-size: 36px;
-            }
-            .content{
-                font-size: 14px;
-                line-height: 1.3em;
-                padding-top: 27px;
-                padding-left: 24px;
-                padding-right: 22px;
-                text-align: justify;
-            }
-        }
-    }
-}
-.index-bed{
-    position: relative;
-    width: 100%;
-    .bed{
-        width: 100%;
-        display: block;
-    }
-    .specialty-context{
-        width: 1400px;
-        margin: 0 auto;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 300px;
-        .specialty-title{
-            line-height: 1em;
-            font-size: 36px;
-            color: #FFF;
-        }
-        .specialty-content{
-            color: #FFF;
-            font-size: 18px;
-            line-height: 1em;
-            padding-top: 45px;
-            width: 860px;
-        }
-        .specialty-case{
-            display: block;
-            width: 185px;
-            height: 42px;
-            line-height: 42px;
-            text-align: center;
-            color: #FFF;
-            margin-top: 44px;
-            font-size: 16px;
-            background-color: #004938;
-        }
-    }
-}
 .index-block-list{
     background-color: #FFF;
     position: reltaive;
-    padding-bottom: 210px;
+    padding-top: 112px;
     .index-product-list{
-        width: 1478px;
+        width: 1400px;
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-        .title{
-            text-align: center;
-            color: #000;
-            font-weight: bold;
-            line-height: 1em;
-            font-size: 64px;
-            padding-top: 116px;
-            padding-bottom: 150px;
+        .case-title{
+            .fl{
+                .china{
+                    font-size: 40px;
+                    line-height: 1em;
+                    letter-spacing: 4px;
+                }
+                .english{
+                    font-size: 13px;
+                    line-height: 3em;
+                    color: #000;
+                    opacity: .5;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                }
+            }
+            .fr{
+                font-size: 18px;
+                line-height: 80px;
+                color: #000;
+                padding-right: 20px;
+                background: url(../images/right-arrow.png) no-repeat right center;
+                background-size: 10px auto;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        .case-banner{
+            padding-top: 33px;
+            padding-bottom: 55px;
+            img{
+                display: block;
+                width: 100%;
+            }
         }
         .list{
-            position: relative;
-            width: 1478+26px;
+            width: 1400+60px;
+            padding-bottom: 188-58px;
             li{
                 float: left;
-                margin-right: 26px;
-                padding-bottom: 50px;
+                margin-right: 58px;
+                padding-bottom: 58px;
                 a{
-                    display: block;
-                    width: 350px;
-                    height: 280px;
-                    position: relative;
-                    img{
-                        min-width: 100%;
-                        min-height: 100%;
-                        display: block;
-                        width: 100%;
-                        height: 100%;
+                    .img{
+                        width: 428px;
+                        height: 400px;
+                    }
+                    .text{
+                        color: #000;
+                        padding-top: 12px;
+                        line-height: 76px;
+                        font-size: 28px;
+                        border-bottom: 2px solid #808080;
+                        opacity: .5;
+                        transition: all .2s;
+                        position: relative;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 428px;
+                    }
+                    &:hover{
+                        text-decoration: none;
+                        .text{
+                            opacity: 1;
+                        }
                     }
                 }
             }
         }
     }
 }
-@media screen and (max-width: 1530px) {
+.index-list-bg{
+    background-color: #f4f0ea;
+    .index-product-list .case-title{
+        padding-bottom: 58px;
+        .fl{
+            .china{
+                letter-spacing: 7px;
+            }
+            .english{
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .index-product-list .list li a{
+        .text{
+            padding-top: 0;
+            line-height: 114px;
+            border: none;
+            background-color: #FFF;
+            opacity: 1;
+            padding: 0 26px;
+            color: #7f7f7f;
+        }
+        &:hover{
+            .text{
+                color: #000;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1536px) {
     .index-enterprise-tent .tent{
         max-width: 1140px;
         .list{
             margin-left: 20px;
         }
     }
+    .index-block-list .index-product-list{
+        width: 1080px;
+        .case-banner{
+            padding-top: 73px;
+        }
+        .list{
+            padding-bottom: 110px;
+            li{
+                margin-right: 45px;
+                a{
+                    .img{
+                        width: 332px;
+                        height: 310px;
+                    }
+                    .text{
+                        font-size: 22px;
+                        width: 332px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+    .index-list-bg .index-product-list .list li a .text{
+        line-height: 90px;
+    }
     .specialty-context{
         max-width: 1140px;
     }
-    .index-block-list .index-product-list{
-        width: 1142px;
-        .list{
-            width: 1143+46px;
-            li{
-                margin-right: 46px;
-            }
-        }
-    }
 }
-@media screen and (max-width: 1180px) {
-    .index-public-features{
-        height: 823px;
-    }
-    .index-our-features{
-        line-height: 222px;
-        height: 222px;
-        font-size: 48px;
-    }
-    .index-enterprise-tent{
-        height: 332px;
-        // margin-bottom:159px;
-        .tent{
-            padding-top: 29px;
-            max-width: 878px;
-            .list{
-                height: 272px;
-                width: 209px;
-                margin-left: 14px;
-                .label{
-                    font-size: 62px;
-                    padding-top: 32px;
-                    text-indent: 16px;
-                }
-                .title{
-                    font-size: 30px;
-                    padding-top: 19px;
-                    padding-left: 16px;
-                }
-                .content{
-                    padding-left: 16px;
-                    padding-top: 17px;
-                }
+@media screen and (max-width: 1280px) {
+    .index-block-list{
+        padding-top: 68px;
+        .index-product-list{
+            width: 769px;
+            .case-banner{
+                padding-top: 66px;
             }
-        }
-    }
-    .index-bed .specialty-context{
-        width: 860px;
-        top: 148px;
-        .specialty-title{
-            font-size: 30px;
-        }
-        .specialty-content{
-            font-size: 16px;
-        }
-    }
-    .index-block-list .index-product-list {
-        width: 880px;
-        .title{
-            font-size: 48px;
-            padding-top: 111px;
-            padding-bottom: 116px;
-        }
-        .list{
-            width: 900px;
-            li{
-                margin-right: 20px;
-                padding-bottom: 20px;
-                a{
-                    width: 280px;
-                    height: 224px;
+            .list{
+                width: 769+108px;
+                padding-bottom: 40px;
+                li{
+                    margin-right: 105px;
                 }
             }
         }
     }
 }
 @media screen and (max-width: 900px) {
-    .index-public-features {
-        height: 607px;
-    }
-    .index-enterprise-tent{
-        height: 270px;
-        .tent{
-            max-width: 750px;
-            .list{
-                width: 135*1.2px;
-                height: 176*1.2px;
-                .label {
-                    font-size: 28px;
-                    padding-top: 16px;
-                    text-indent: 10px;
-                }
-                .title {
-                    font-size: 20px;
-                    padding-top: 10px;
-                    padding-left: 10px;
-                }
-                .content {
-                    padding-left: 10px;
-                    padding-top: 10px;
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-    .index-bed .specialty-context{
-        width: 690px;
-        top: 99px;
-        .specialty-content{
-            width: 100%;
-        }
-    }
     .index-block-list{
-        padding-bottom: 120px;
         .index-product-list{
-            width: 712px;
+            width: 730px;
             .list{
-                width: 732px;
-                li a {
-                    width: 224px;
-                    height: 179px;
+                li{
+                    margin-right: 66px;
                 }
             }
         }
     }
 }
 @media screen and (max-width: 750px) {
+    .index-block-list{
+        display: none;
+    }
     .index-public-features{
         background: transparent;
         height: auto;
     }
-    .index-banner-head{
-        padding-top: 1.6rem;
-        height: 5.33333333+1.6rem;
-    }
+    // .index-banner-head{
+    //     height: 5.33333333+1.6rem;
+    // }
     .swiper-pagination-bullet{
-        width: 8px;
-        height: 8px;
+        width: 20px;
+        height: 4px;
+        border-radius: 2px;
     }
     .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
-        margin: 0 5px;
+        margin: 0 3px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
     }
     .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
         bottom: 15/75rem;
@@ -413,14 +307,12 @@
     .index-bed{
         display: none;
     }
-    .index-block-list{
-        display: none;
-    }
     .phone-index-case{
         display: block;
         margin: 0 20/75rem;
         background: #FFF;
         margin-bottom: 20/75rem;
+        margin-top: .3rem;
         .phone-case-title{
             line-height: 80/75rem;
             height: 80/75rem;

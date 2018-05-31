@@ -13,6 +13,129 @@
     <title>首页</title>
 </head>
 <body class="index-background">
+    <!-- 菜单start -->
+    <div class="common-height-top">
+        <div class="common-head-menu">
+            <div class="menu-nav clear">
+                <a href="./">
+                    <img class="fl logo" src="./images/logo.png" alt="">
+                </a>
+                <div class="phone-menu-line" style="display: none;">
+                    <img class="line" src="./images/line.png" alt="">
+                </div>
+                <ul class="fr stair-menu">
+                    <li class="active">
+                        <a class="index" href="index.html">首页</a>
+                    </li>
+                    <li class="next-level">
+                        <a class="product" href="javascript:">工程案例</a>
+                        <!-- 二级链接 -->
+                        <div class="second-menu">
+                            <a href="case.html">
+                                <img src="images/icon/1 (10).png" alt="">
+                                酒店
+                            </a>
+                            <a href="case.html">
+                                <img src="images/icon/1 (25).png" alt="">
+                                别墅会所
+                            </a>
+                            <a href="case.html">
+                                <img src="images/icon/1 (24).png" alt="">
+                                精装豪宅
+                            </a>
+                            <a href="case.html">
+                                <img src="images/icon/1 (16).png" alt="">
+                                办公大楼
+                            </a>
+                        </div>
+                    </li>
+                    <li class="next-level">
+                        <a class="product" href="javascript:">产品展示</a>
+                        <div class="second-menu">
+                            <a href="product.html">
+                                <img src="images/icon/1 (11).png" alt="">
+                                酒店家具
+                            </a>
+                            <a href="product.html">
+                                <img src="images/icon/1 (19).png" alt="">
+                                别墅家具
+                            </a>
+                            <a href="product.html">
+                                <img src="images/icon/1 (1).png" alt="">
+                                会所家具
+                            </a>
+                            <a href="product.html">
+                                <img src="images/icon/1 (12).png" alt="">
+                                办公家具
+                            </a>
+                        </div>
+                    </li>
+                    <li class="next-level">
+                        <a class="case" href="javascript:">关于我们</a>
+                        <div class="second-menu">
+                            <a href="about.html">
+                                <img src="images/icon/1 (10).png" alt="">
+                                企业介绍
+                            </a>
+                            <a href="about.html">
+                                <img src="images/icon/1 (5).png" alt="">
+                                公司愿景
+                            </a>
+                            <a href="about.html">
+                                <img src="images/icon/1 (8).png" alt="">
+                                经营理念
+                            </a>
+                            <a href="about.html">
+                                <img src="images/icon/1 (4).png" alt="">
+                                合作伙伴
+                            </a>
+                        </div>
+                    </li>
+                    <li class="next-level">
+                        <a class="about" href="javascript:">加入我们</a>
+                        <div class="second-menu">
+                            <a href="join.html">
+                                <img src="images/icon/1 (18).png" alt="">
+                                人才招聘
+                            </a>
+                            <a href="join.html">
+                                <img src="images/icon/1 (9).png" alt="">
+                                用人理念
+                            </a>
+                            <a href="join.html">
+                                <img src="images/icon/1 (14).png" alt="">
+                                企业文化
+                            </a>
+                        </div>
+                    </li>
+                    <li class="next-level">
+                        <a class="relation" href="javascript:">联系我们</a>
+                        <div class="second-menu">
+                            <a href="relation.html">
+                                <img src="images/icon/1 (21).png" alt="">
+                                深圳办公室
+                            </a>
+                            <a href="relation.html">
+                                <img src="images/icon/1 (21).png" alt="">
+                                东莞工厂
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.phone-menu-line').on('click', function () {
+            $('.common-head-menu .stair-menu').slideToggle();
+        });
+        $('.next-level').on('click', function () {
+            if (document.documentElement.clientWidth > 750) return;
+            $(this).toggleClass('click-active').find('.second-menu').slideToggle();
+        })
+    </script>
+    <!-- 菜单end -->
+    <!-- 轮播图start -->
     <div class="index-banner-head">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -23,7 +146,7 @@
                 </div>
                 <div class="swiper-slide">
                     <a href="">
-                        <img src="./images/bannar.jpg" alt="">
+                        <img src="./images/index-bed.jpg" alt="">
                     </a>
                 </div>
                 <div class="swiper-slide">
@@ -33,143 +156,93 @@
                 </div>
             </div>
             <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
         </div>
     </div>
-    <!-- 菜单start -->
-    <div class="common-head-menu">
-        <div class="menu-nav clear">
-            <a href="./"><img class="fl logo" src="./images/logo.png" alt=""></a>
-            <div class="phone-menu-line" style="display: none;">
-                <img class="line" src="./images/line.png" alt="">
-            </div>
-            <ul class="fr stair-menu">
-                <li class="active">
-                    <a class="index" href="index.html">首页</a>
-                </li>
-                <li class="next-level">
-                    <a class="product" href="javascript:">产品展示</a>
-                    <div class="second-menu">
-                        <a href="product.html">酒店公共区域</a>
-                        <a href="product.html">酒店客房区域</a>
-                        <a href="product.html">酒店办公区域</a>
-                        <a href="product.html">别墅住家家具</a>
-                    </div>
-                </li>
-                <li class="next-level">
-                    <a class="case" href="javascript:">成功案例</a>
-                    <div class="second-menu">
-                        <a href="case.html">酒店</a>
-                        <a href="case.html">别墅</a>
-                        <a href="case.html">私人订制</a>
-                    </div>
-                </li>
-                <li class="next-level">
-                    <a class="about" href="javascript:">关于我们</a>
-                    <div class="second-menu">
-                        <a href="about-enterprise.html">企业介绍</a>
-                        <a href="about-business.html">主营业务</a>
-                        <a href="about-equipment.html">工厂全景
-                            <br/>设备展示</a>
-                    </div>
-                </li>
-                <li>
-                    <a class="relation" href="relation.html">联系我们</a>
-                </li>
-                <li class="english-pc-none">
-                    <a class="english" href="">英文版</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <script>
-        $('.phone-menu-line').on('click',function(){
-            $('.stair-menu').slideToggle();
-        });
-        $('.next-level').on('click',function(){
-            if(document.documentElement.clientWidth>750) return;
-            $(this).toggleClass('click-active').find('.second-menu').slideToggle();
-        })
-    </script>
-    <!-- 菜单end -->
-    <div class="index-public-features">
-        <div class="index-our-features">
-            <p>OUR FEATURES</p>
-        </div>
-        <div class="index-enterprise-tent">
-            <ul class="tent clear">
-                <li class="list integrity">
-                    <p class="label">01</p>
-                    <p class="title">诚信为本原则</p>
-                    <p class="content">煜明傢倶专业承接国内五星级酒店固装家具项目，公司在过去的12年发展历程中一直秉持“质量第一，诚信兴业”的宗</p>
-                </li>
-                <li class="list public">
-                    <p class="label">02</p>
-                    <p class="title">优质服务口碑</p>
-                    <p class="content">煜明傢倶在香港和内地业界都赢得了良好的口碑效应，历年来以专业的服务和优质的产品赢得了客户的信赖。</p>
-                </li>
-                <li class="list specialty">
-                    <p class="label">03</p>
-                    <p class="title">专业的选材</p>
-                    <p class="content">煜明傢倶对每一件选材都近乎苛刻，精挑细选其颜色、纹理、质地。</p>
-                </li>
-                <li class="list technology">
-                    <p class="label">04</p>
-                    <p class="title">精湛的工艺</p>
-                    <p class="content">煜明傢倶能针对现场的实际情况解决家具安装过程中的所有问题，公司的优势在于能在短期之内完成多个样板房项目，灵活性强，保证工期和质量。</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="index-bed">
-        <img class="bed" src="./images/transparent.png" alt="">
-        <div class="specialty-context">
-            <div class="specialty-title">专业承接国内五星级酒店固装家具项目</div>
-            <div class="specialty-content">主要工程业绩有：长春益田净月喜来登酒店、广州从化温泉养生谷酒店、广州丽思卡尔顿酒店、深圳大中华喜来登酒店、深圳华侨城洲际饭店、福建名城毫生酒店等国内高端酒店、会所和别墅项目……</div>
-            <a class="specialty-case" href="">点击查看更多成功案例</a>
-        </div>
-    </div>
+    <!-- 轮播图end -->
     <div class="index-block-list">
         <div class="index-product-list">
-            <div class="title">OUR PRODUCT</div>
-            <ul class="list">
+            <div class="case-title clear">
+                <div class="fl">
+                    <p class="china">成功案例</p>
+                    <p class="english">Successful cases</p>
+                </div>
+                <a href="" class="fr">
+                    更多案例
+                </a>
+            </div>
+            <div class="case-banner">
+                <img src="images/case-banner.jpg" alt="">
+            </div>
+            <ul class="list clear">
                 <li>
-                    <a href="" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;">
-                        <!-- <img src="./images/index-background.jpg" alt=""> -->
+                    <a href="">
+                        <div class="img" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;"></div>
+                        <p class="text">深圳宝安万豪酒店</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" href="" style="background: url(./images/woodiness04.png) no-repeat center;background-size: cover;">
-                        <!-- <img src="./images/woodiness04.png" alt=""> -->
+                    <a href="">
+                        <div class="img" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;"></div>
+                        <p class="text">深圳宝安万豪酒店</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                        <!-- <img src="./images/block-list.jpg" alt=""> -->
+                    <a href="">
+                        <div class="img" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;"></div>
+                        <p class="text">深圳宝安万豪酒店</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="index-block-list index-list-bg">
+        <div class="index-product-list">
+            <div class="case-title clear">
+                <div class="fl">
+                    <p class="china">推荐产品</p>
+                    <p class="english">recommend products</p>
+                </div>
+                <a href="" class="fr">
+                    更多产品
+                </a>
+            </div>
+            <ul class="list clear">
+                <li>
+                    <a href="">
+                        <div class="img" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;"></div>
+                        <p class="text">深圳宝安万豪酒店</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                        <!-- <img src="./images/block-list.jpg" alt=""> -->
+                    <a href="">
+                        <div class="img" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;"></div>
+                        <p class="text">深圳宝安万豪酒店</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                        <!-- <img src="./images/block-list.jpg" alt=""> -->
+                    <a href="">
+                        <div class="img" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;"></div>
+                        <p class="text">深圳宝安万豪酒店</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                        <!-- <img src="./images/block-list.jpg" alt=""> -->
+                    <a href="">
+                        <div class="img" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;"></div>
+                        <p class="text">深圳宝安万豪酒店</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                        <!-- <img src="./images/block-list.jpg" alt=""> -->
+                    <a href="">
+                        <div class="img" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;"></div>
+                        <p class="text">深圳宝安万豪酒店</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" style="background: url(./images/index-bed.jpg) no-repeat center;background-size: cover;">
-                        <!-- <img src="./images/block-list.jpg" alt=""> -->
+                    <a href="">
+                        <div class="img" style="background: url(./images/index-background.jpg) no-repeat center;background-size: cover;"></div>
+                        <p class="text">深圳宝安万豪酒店</p>
                     </a>
                 </li>
             </ul>
@@ -225,28 +298,97 @@
     <!-- 手机端成功案例end -->
     <!-- footer底部start -->
     <div class="footer">
-        <ul class="list-href">
-            <li><a href="./">首页</a></li>
-            <li><a href="about-business.html">关于我们</a></li>
-            <li><a href="product.html">产品展示</a></li>
-            <li><a href="case.html">成功案例</a></li>
-            <li><a href="relation.html">联系我们</a></li>
-            <li><a href="">英文版</a></li>
-        </ul>
-        <ul class="list-message clear">
-            <li class="clear">
-                <div class="phone"><a href="tel:769-81819553">+86-769-81819553</a></div>
-                <div class="mailbox"><a href="javascript:">info@yushinefumiture.com</a></div>
+        <ul class="stair-menu clear">
+            <li>
+                <a class="index" href="index.html">首页</a>
             </li>
-            <li class="er-code clear">
+            <li class="next-level">
+                <a class="product" href="javascript:">工程案例</a>
+                <div class="second-menu">
+                    <a href="">
+                        酒店案例
+                    </a>
+                    <a href="">
+                        别墅会所
+                    </a>
+                    <a href="">
+                        精装豪宅
+                    </a>
+                    <a href="">
+                        办公大楼
+                    </a>
+                </div>
+            </li>
+            <li class="next-level">
+                <a class="product" href="javascript:">产品展示</a>
+                <div class="second-menu">
+                    <a href="">
+                        酒店家具
+                    </a>
+                    <a href="">
+                        别墅家具
+                    </a>
+                    <a href="">
+                        会所家具
+                    </a>
+                    <a href="">
+                        办公家具
+                    </a>
+                </div>
+            </li>
+            <li class="next-level">
+                <a class="case" href="javascript:">关于我们</a>
+                <div class="second-menu">
+                    <a href="">
+                        企业介绍
+                    </a>
+                    <a href="">
+                        公司愿景
+                    </a>
+                    <a href="">
+                        经营理念
+                    </a>
+                    <a href="">
+                        合作伙伴
+                    </a>
+                </div>
+            </li>
+            <li class="next-level">
+                <a class="about" href="javascript:">加入我们</a>
+                <div class="second-menu">
+                    <a href="">
+                        人才招聘
+                    </a>
+                    <a href="">
+                        用人理念
+                    </a>
+                    <a href="">
+                        企业文化
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a class="relation" href="relation.html">联系我们</a>
+                <div class="second-menu">
+                    <a href="">
+                        深圳办公室
+                    </a>
+                    <a href="">
+                        东莞工厂
+                    </a>
+                </div>
+            </li>
+            <li>
                 <img class="img-code" src="./images/block-list.jpg" alt="">
                 <div class="attention">
-                    <p class="watch">关注微信二维码</p>
-                    <p class="get-more-message">获取更多优惠信息</p>
+                    <p class="watch">官方微信</p>
+                    <p class="get-more-message">更多精彩</p>
                 </div>
             </li>
         </ul>
-        <div class="copyright-message">
+        <div class="copyright-message clear">
+            <a class="phone" href="tel:769-81819553">+86-769-81819553</a>
+            <a class="mail" href="">info@yushinefumiture.com</a>
             <a href="javascript:">Copyright © 218 光煜木制品有限公司 DONGGUAN GUANGYU WOOD FURNITURE CO.,LTD 版权所有</a>
         </div>
     </div>
@@ -257,9 +399,14 @@
         autoplay: true,//可选选项，自动滑动
         loop: true,
         speed: 500,
+        effect: 'fade',
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 </script>

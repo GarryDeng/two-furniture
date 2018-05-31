@@ -57,6 +57,10 @@ fieldset,
 img {
   border: none;
 }
+html {
+  position: relative;
+  overflow-x: hidden;
+}
 button,
 input,
 select,
@@ -96,15 +100,24 @@ hr {
 body {
   font-size: 20px;
 }
+.common-height-top {
+  position: relative;
+  height: 140px;
+}
 .common-head-menu {
   height: 140px;
   line-height: 140px;
   text-align: center;
-  background-color: #080706;
+  background-color: #FFF;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
 }
 .common-head-menu .menu-nav {
   width: 100%;
-  max-width: 1540px;
+  width: 1460px;
   margin: 0 auto;
   height: 100%;
 }
@@ -114,58 +127,78 @@ body {
   height: 80px;
 }
 .common-head-menu .stair-menu {
-  padding-right: 30px;
   height: 100%;
 }
 .common-head-menu .stair-menu li {
   float: left;
   position: relative;
-  margin-left: 110px;
+  padding-left: 110px;
   height: 100%;
 }
 .common-head-menu .stair-menu li:first-child {
-  margin-left: 0;
+  padding-left: 0;
 }
 .common-head-menu .stair-menu li.english-pc-none {
   display: none;
 }
 .common-head-menu .stair-menu li a {
-  color: #FFF;
+  color: #000;
   font-size: 24px;
+  position: relative;
 }
 .common-head-menu .stair-menu li a:hover {
-  color: #21604A;
+  color: #26563f;
   text-decoration: none;
 }
 .common-head-menu .stair-menu li.active a {
-  color: #21604A;
+  color: #000;
 }
-.common-head-menu .stair-menu li .second-menu {
+.common-head-menu .stair-menu li.active a::before {
+  content: "";
   position: absolute;
+  bottom: 0;
+  border-top: 5px solid #26563f;
+  left: 0;
+  right: 0;
+  bottom: -56px;
 }
 .common-head-menu .stair-menu li .second-menu {
   display: none;
   position: absolute;
   top: 140px;
-  background-color: #080706;
+  background-color: #fff;
   left: 50%;
-  margin-left: -80px;
+  margin-left: -146px;
   z-index: 99;
+  padding: 18px 30px;
 }
 .common-head-menu .stair-menu li .second-menu a {
   display: block;
-  width: 160px;
-  font-size: 14px;
+  width: 340px;
+  font-size: 20px;
   position: relative;
-  line-height: 20px;
-  padding: 10px 0;
-  color: #FFF;
+  line-height: 112px;
+  color: #000;
+  opacity: .5;
+  text-align: left;
+  text-indent: 88px;
+  border-bottom: 1px solid #666;
+  background: url(../images/right-arrow.png) no-repeat 303px center;
+  transition: all .2s;
+}
+.common-head-menu .stair-menu li .second-menu a img {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
 }
 .common-head-menu .stair-menu li .second-menu a.active {
-  color: #21604A;
+  opacity: 1;
 }
 .common-head-menu .stair-menu li .second-menu a:hover {
-  color: #21604A;
+  opacity: 1;
 }
 .common-head-menu .stair-menu li .second-menu a::after {
   content: "";
@@ -178,119 +211,114 @@ body {
   width: 130px;
   left: 15px;
 }
+.common-head-menu .stair-menu li .second-menu a::before {
+  display: none;
+}
+.common-head-menu .stair-menu li .second-menu a:last-child {
+  border-bottom: none;
+}
 .common-head-menu .stair-menu li .second-menu a:first-child::after {
   display: none;
 }
 .common-head-menu .stair-menu li:hover .second-menu {
   display: block;
 }
-.footer {
-  background-color: #000;
-  position: relative;
-  padding-top: 150px;
-  padding-bottom: 57px;
-}
-.footer .list-href {
-  position: relative;
-  text-align: center;
-  padding-bottom: 70px;
-}
-.footer .list-href::before {
+.common-head-menu .stair-menu li:hover a::before {
   content: "";
-  display: block;
   position: absolute;
-  left: 50%;
-  width: 1430px;
-  margin-left: -715px;
-  bottom: -3px;
-  background-color: #CDCDCD;
-  height: 3px;
+  bottom: 0;
+  border-top: 5px solid #26563f;
+  left: 0;
+  right: 0;
+  bottom: -56px;
 }
-.footer .list-href li {
-  display: inline-block;
-  margin-left: 186px;
-  line-height: 1em;
+.footer {
+  background-color: #FFF;
+  position: relative;
+  border-top: 10px solid #f4f0ea;
+  padding-top: 116px;
 }
-.footer .list-href li:first-child {
-  margin-left: 0;
+.footer .stair-menu {
+  width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  border-bottom: 3px solid #f4f0ea;
 }
-.footer .list-href li a {
-  color: #FFF;
+.footer .stair-menu li {
+  width: 198px;
+  float: left;
+}
+.footer .stair-menu li a {
+  color: #000;
   font-size: 22px;
-}
-.footer .list-href li a:hover {
-  color: #21604A;
-  text-decoration: none;
-}
-.footer .list-message {
-  text-align: center;
-  vertical-align: top;
-}
-.footer .list-message a {
-  color: #FFF;
-}
-.footer .list-message a:hover {
-  text-decoration: none;
-}
-.footer .list-message li {
-  display: inline-block;
-  line-height: 50px;
-  margin-top: 140px;
-  vertical-align: top;
-}
-.footer .list-message li .phone {
-  float: left;
-  margin-right: 168px;
-  padding-left: 78px;
-  background: url(../images/phone.png) no-repeat left center;
-}
-.footer .list-message li .phone a {
-  font-size: 32px;
-}
-.footer .list-message li .mailbox {
-  float: left;
-  margin-right: 205px;
-  padding-left: 70px;
-  background: url(../images/mailbox.png) no-repeat left center;
-}
-.footer .list-message li .mailbox a {
-  font-size: 24px;
-}
-.footer .list-message li.er-code .img-code {
-  float: left;
   display: block;
-  width: 100px;
-  height: 100px;
-  margin-top: -22px;
+  margin-bottom: 46px;
 }
-.footer .list-message li.er-code .attention {
-  float: left;
+.footer .stair-menu li a:hover {
+  text-decoration: none;
 }
-.footer .list-message li.er-code p {
-  color: #FFF;
+.footer .stair-menu li .second-menu a {
   font-size: 18px;
-  width: 150px;
-  line-height: 1.3em;
-  text-align: justify;
-  padding-left: 16px;
+  opacity: .5;
+  line-height: 2.6em;
+  margin-bottom: 0;
+  transition: all .2s;
 }
-.footer .list-message li.er-code p.watch {
-  letter-spacing: 2px;
+.footer .stair-menu li .second-menu a:hover {
+  opacity: 1;
+}
+.footer .stair-menu li:first-child {
+  width: 178px;
+}
+.footer .stair-menu li:last-child {
+  float: right;
+  width: 140px;
+  position: relative;
+  overflow: hidden;
+}
+.footer .stair-menu li:last-child .img-code {
+  width: 140px;
+  height: 140px;
+  display: block;
+}
+.footer .stair-menu li:last-child .attention {
+  width: 260px;
+  padding-top: 10px;
+  font-size: 18px;
+  color: #000;
+  letter-spacing: 20px;
+  line-height: 1.4em;
 }
 .footer .copyright-message {
-  font-size: 14px;
-  text-align: center;
-  color: #FFF;
-  padding-top: 85px;
+  width: 1400px;
+  margin: 0 auto;
+  padding-top: 74px;
+  padding-bottom: 100px;
 }
 .footer .copyright-message a {
+  color: #000;
   font-size: 14px;
-  color: #FFF;
-  line-height: 1em;
+  float: right;
 }
 .footer .copyright-message a:hover {
-  color: #21604A;
   text-decoration: none;
+}
+.footer .copyright-message a.phone {
+  font-size: 21px;
+  float: left;
+  display: block;
+  padding-left: 60px;
+  background: url(../images/icon/call.png) no-repeat left center;
+  background-size: 30px auto;
+}
+.footer .copyright-message a.mail {
+  font-size: 18px;
+  float: left;
+  display: block;
+  padding-left: 60px;
+  background: url(../images/icon/mail.png) no-repeat left center;
+  background-size: 30px auto;
+  margin-left: 66px;
 }
 .product-banner {
   width: 100%;
@@ -301,138 +329,132 @@ body {
   display: block;
   width: 100%;
 }
-@media screen and (max-width: 1530px) {
+@media screen and (max-width: 1536px) {
+  .common-head-menu .menu-nav {
+    width: 1180px;
+  }
+  .common-head-menu .menu-nav .logo {
+    padding-left: 0;
+  }
   .common-head-menu .stair-menu {
     max-width: 1280px;
   }
   .common-head-menu .stair-menu li {
-    margin-left: 63px;
-  }
-  .footer .list-href::before {
-    width: 1060px;
-    margin-left: -530px;
-  }
-  .footer .list-href li {
-    margin-left: 112px;
-  }
-  .footer .list-message li .phone {
-    margin-right: 48px;
-  }
-  .footer .list-message li .mailbox {
-    margin-right: 22px;
-  }
-}
-@media screen and (max-width: 1180px) {
-  .common-head-menu {
-    height: 120px;
-    line-height: 120px;
-  }
-  .common-head-menu .menu-nav .logo {
-    padding-top: 27px;
-    height: 65px;
-  }
-  .common-head-menu .stair-menu li a {
-    font-size: 22px;
+    padding-left: 54px;
   }
   .common-head-menu .stair-menu li .second-menu {
-    top: 120px;
+    margin-left: -172px;
   }
-  .footer {
-    padding-top: 94px;
+  .footer .stair-menu {
+    width: 1180px;
   }
-  .footer .list-href {
-    padding-bottom: 90px;
+  .footer .stair-menu li {
+    width: 160px;
   }
-  .footer .list-href::before {
-    width: 880px;
-    margin-left: -440px;
+  .footer .stair-menu li:first-child {
+    width: 136px;
   }
-  .footer .list-href li {
-    margin-left: 86px;
+  .footer .copyright-message {
+    width: 1180px;
+    padding-bottom: 39px;
   }
-  .footer .list-href li a {
-    font-size: 20px;
+  .footer .copyright-message a {
+    display: block;
+    text-align: center;
+    width: 100%;
   }
-  .footer .list-message li {
-    margin-top: 105px;
+  .footer .copyright-message a.phone,
+  .footer .copyright-message a.mail {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    margin-bottom: 36px;
   }
-  .footer .list-message li .phone {
-    float: none;
-    margin-right: 143px;
+  .footer .copyright-message a.phone {
+    text-indent: 120px;
+  }
+  .footer .copyright-message a.mail {
     text-align: left;
-  }
-  .footer .list-message li .mailbox {
-    float: none;
-    padding-left: 80px;
-    text-align: left;
-  }
-  .footer .list-message li.er-code {
-    padding-top: 20px;
-  }
-  .footer .list-message li.er-code p {
-    padding-left: 42px;
+    text-indent: 97px;
   }
 }
-@media screen and (max-width: 950px) {
-  .common-head-menu {
+@media screen and (max-width: 1280px) {
+  .common-height-top {
+    height: 100px;
+  }
+  .common-height-top .common-head-menu {
     height: 100px;
     line-height: 100px;
   }
-  .common-head-menu .menu-nav .logo {
+  .common-height-top .common-head-menu .menu-nav {
+    width: 830px;
+  }
+  .common-height-top .common-head-menu .menu-nav .logo {
     padding-top: 25px;
     height: 50px;
   }
-  .common-head-menu .stair-menu li {
-    margin-left: 38px;
+  .common-height-top .common-head-menu .stair-menu li {
+    padding-left: 24px;
   }
-  .common-head-menu .stair-menu li a {
-    font-size: 18px;
+  .common-height-top .common-head-menu .stair-menu li a {
+    font-size: 20px;
   }
-  .common-head-menu .stair-menu li .second-menu {
+  .common-height-top .common-head-menu .stair-menu li.active a::before,
+  .common-height-top .common-head-menu .stair-menu li:hover a::before {
+    bottom: -38px;
+  }
+  .common-height-top .common-head-menu .stair-menu li .second-menu {
     top: 100px;
+    margin-left: -185px;
   }
   .footer {
-    padding-top: 60px;
+    padding-top: 88px;
   }
-  .footer .list-href {
-    padding-bottom: 60px;
+  .footer .stair-menu {
+    width: 830px;
   }
-  .footer .list-href::before {
-    width: 728px;
-    margin-left: -364px;
+  .footer .stair-menu li {
+    width: 118px;
   }
-  .footer .list-href li {
-    margin-left: 56px;
+  .footer .stair-menu li:first-child {
+    width: 86px;
   }
-  .footer .list-href li a {
-    font-size: 20px;
+  .footer .copyright-message {
+    width: 830px;
+    padding-top: 39px;
   }
-  .footer .list-message li {
-    margin-top: 80px;
+  .footer .copyright-message a.phone {
+    text-indent: 0;
   }
-  .footer .list-message li .phone {
-    margin-right: 150px;
-    padding-left: 50px;
-    background: url(../images/phone.png) no-repeat left center;
-    background-size: 30px auto;
+  .footer .copyright-message a.mail {
+    text-indent: 77px;
   }
-  .footer .list-message li .phone a {
-    font-size: 20px;
+}
+@media screen and (max-width: 888px) {
+  .common-height-top .common-head-menu .menu-nav {
+    width: 750px;
   }
-  .footer .list-message li .mailbox {
-    padding-left: 80px;
-    padding-left: 50px;
-    background: url(../images/mailbox.png) no-repeat left center;
-    background-size: 30px auto;
+  .footer .stair-menu {
+    width: 750px;
   }
-  .footer .list-message li .mailbox a {
-    font-size: 20px;
+  .footer .stair-menu li {
+    width: 90px;
   }
-  .footer .list-message li.er-code {
-    padding-top: 20px;
+  .footer .stair-menu li a {
+    font-size: 18px;
   }
-  .footer .list-message li.er-code p {
-    padding-left: 22px;
+  .footer .stair-menu li:first-child {
+    width: 66px;
+  }
+  .footer .stair-menu li .second-menu a {
+    font-size: 16px;
+  }
+  .footer .copyright-message {
+    width: 750px;
+  }
+  .footer .copyright-message a.mail {
+    text-indent: 66px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -440,18 +462,23 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .common-head-menu {
+  .common-height-top {
+    height: 1.6rem;
+  }
+  .common-height-top .common-head-menu {
     position: fixed;
     left: 0;
     top: 0;
     width: 10rem;
     height: 1.6rem;
+    line-height: 1.6rem;
     z-index: 9998;
   }
-  .common-head-menu .menu-nav {
+  .common-height-top .common-head-menu .menu-nav {
     position: relative;
+    width: 10rem;
   }
-  .common-head-menu .menu-nav .logo {
+  .common-height-top .common-head-menu .menu-nav .logo {
     padding: 0;
     position: absolute;
     width: auto;
@@ -461,18 +488,18 @@ body {
     top: 50%;
     margin-top: -0.54666667rem;
   }
-  .common-head-menu .menu-nav .phone-menu-line {
+  .common-height-top .common-head-menu .menu-nav .phone-menu-line {
     display: block!important;
     float: right;
     margin-right: .3rem;
     margin-top: 0.4rem;
     line-height: 1em;
   }
-  .common-head-menu .menu-nav .phone-menu-line .line {
+  .common-height-top .common-head-menu .menu-nav .phone-menu-line .line {
     width: 0.66666667rem;
     height: 0.66666667rem;
   }
-  .common-head-menu .menu-nav .stair-menu {
+  .common-height-top .common-head-menu .menu-nav .stair-menu {
     display: none;
     float: none;
     position: absolute;
@@ -481,10 +508,10 @@ body {
     right: 0;
     width: 100%;
     height: auto;
-    background-color: #080706;
+    background-color: #fff;
     padding-right: 0;
   }
-  .common-head-menu .menu-nav .stair-menu::before {
+  .common-height-top .common-head-menu .menu-nav .stair-menu::before {
     content: "";
     display: block;
     border-top: 1px solid #FFF;
@@ -494,57 +521,62 @@ body {
     top: 0;
     transform: scaleY(0.33333333);
   }
-  .common-head-menu .menu-nav .stair-menu li {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li {
     float: none;
     margin-left: 0;
     padding: 0 .3rem;
     height: auto;
   }
-  .common-head-menu .menu-nav .stair-menu li.next-level {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li:hover a::before,
+  .common-height-top .common-head-menu .menu-nav .stair-menu li.active a::before {
+    display: none;
+  }
+  .common-height-top .common-head-menu .menu-nav .stair-menu li.next-level {
     background: url(../images/down-open.png) no-repeat 9.1rem 0.53333333rem;
     background-size: 0.73333333rem auto;
   }
-  .common-head-menu .menu-nav .stair-menu li.click-active {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li.click-active {
     background: url(../images/down-shut.png) no-repeat 9.2rem 0.53333333rem;
     background-size: 0.46666667rem auto;
   }
-  .common-head-menu .menu-nav .stair-menu li.click-active::before {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li.click-active::before {
     display: none;
   }
-  .common-head-menu .menu-nav .stair-menu li.english-pc-none {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li.english-pc-none {
     display: block;
   }
-  .common-head-menu .menu-nav .stair-menu li a {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li a {
     display: block;
     text-align: left;
     line-height: 1.65333333rem;
     height: 1.65333333rem;
-    color: #FFF;
+    color: #000;
     font-size: 0.37333333rem;
   }
-  .common-head-menu .menu-nav .stair-menu li::before {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li::before {
     content: "";
     display: block;
     left: .3rem;
     right: .3rem;
     position: absolute;
     bottom: -1px;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #f4f0ea;
     transform: scaleY(0.33333333);
   }
-  .common-head-menu .menu-nav .stair-menu li:last-child::before {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li:last-child::before {
     display: none;
   }
-  .common-head-menu .menu-nav .stair-menu li .second-menu {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li .second-menu {
     display: none;
     position: relative;
     top: 0;
     width: 10rem;
     left: -0.3rem;
     margin-left: 0;
-    background-color: #FFF;
+    background-color: #f4f0ea;
+    padding: 0;
   }
-  .common-head-menu .menu-nav .stair-menu li .second-menu a {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li .second-menu a {
     color: #000;
     width: 50%;
     float: left;
@@ -555,20 +587,26 @@ body {
     padding-left: 0.64rem;
     background: url(../images/go-to.png) no-repeat 0.18666667rem center;
     background-size: 0.32rem auto;
+    border: none;
+    opacity: 1;
+    text-indent: 0;
   }
-  .common-head-menu .menu-nav .stair-menu li .second-menu a:nth-child(2n) {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li .second-menu a img {
+    display: none;
+  }
+  .common-height-top .common-head-menu .menu-nav .stair-menu li .second-menu a:nth-child(2n) {
     width: 30%;
     margin-left: 20%;
   }
-  .common-head-menu .menu-nav .stair-menu li .second-menu a::after {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li .second-menu a::after {
     content: '';
     clear: both;
-    display: block;
+    display: none;
     width: 0;
     height: 0;
     overflow: hidden;
   }
-  .common-head-menu .menu-nav .stair-menu li .second-menu::after {
+  .common-height-top .common-head-menu .menu-nav .stair-menu li .second-menu::after {
     content: '';
     clear: both;
     display: block;
@@ -577,6 +615,32 @@ body {
     overflow: hidden;
   }
   .footer {
+    padding-top: 0.93333333rem;
+  }
+  .footer .stair-menu {
     display: none;
+  }
+  .footer .copyright-message {
+    padding-top: 0;
+    width: 10rem;
+    padding-bottom: 0.52rem;
+  }
+  .footer .copyright-message a {
+    font-size: 0.18666667rem;
+  }
+  .footer .copyright-message a.phone,
+  .footer .copyright-message a.mail {
+    margin-bottom: 0.48rem;
+    padding-bottom: 0.85333333rem;
+    border-bottom: 1px solid #f4f0ea;
+    line-height: .3rem;
+  }
+  .footer .copyright-message a.phone {
+    font-size: 0.28rem;
+  }
+  .footer .copyright-message a.mail {
+    font-size: 0.24rem;
+    text-indent: 0;
+    text-align: center;
   }
 }

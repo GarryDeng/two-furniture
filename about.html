@@ -11,7 +11,7 @@
     <script src="./js/common.js"></script>
     <script src="./js/jquery.2.1.4.min.js"></script>
     <script src="./js/swiper.min.js"></script>
-    <title>产品详情-产品一</title>
+    <title>关于我们</title>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="next-level active">
+                    <li class="next-level">
                         <a class="product" href="javascript:">产品展示</a>
                         <div class="second-menu">
                             <a href="product.html">
@@ -64,7 +64,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="next-level">
+                    <li class="next-level active">
                         <a class="case" href="javascript:">关于我们</a>
                         <div class="second-menu">
                             <a href="about.html">
@@ -120,139 +120,29 @@
         })
     </script>
     <!-- 菜单end -->
-    <div class="product-banner details-phone-none">
+    <div class="product-banner">
         <img class="product-banner-img" src="./images/product-banner.jpg" alt="">
     </div>
-    <div class="details-phone-none" style="border-bottom: 8px solid #f4f0ea">
+    <div class="phone-bottom-none" style="border-bottom: 8px solid #f4f0ea">
         <div class="product-content">
             <div class="product-list clear">
-                <p class="title fl">产品展示</p>
+                <p class="title fl">加入我们</p>
                 <div class="list fr">
                     <!-- active为选中 -->
-                    <a class="active" href="">酒店家具</a>
-                    <a href="">别墅家具</a>
-                    <a href="">会所家具</a>
-                    <a href="">办公家具</a>
+                    <a class="active" href="">人才招聘</a>
+                    <a href="">用人理念</a>
+                    <a href="">企业文化</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="product-content">
-        <div class="product-content-list">
-            <div class="product-details-date">
-                <div>
-                    <div class="title">柏悦万豪酒店</div>
-                    <p class="author-date">2018/06</p>
-                    <div class="details-content">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="1">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="2">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/index-bed.jpg" alt="3">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="4">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="5">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product-details.jpg" alt="6">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 下方滚动栏start -->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- 图片变动到上层的style样式中 -->
-                        <div class="swiper-slide" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                            <!-- <img src="./images/block-list.jpg" alt=""> -->
-                        </div>
-                        <!-- active为选中状态 -->
-                        <div class="swiper-slide active" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                            <!-- <img src="" alt=""> -->
-                        </div>
-                        <div class="swiper-slide" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                            <!-- <img src="./images/block-list.jpg" alt=""> -->
-                        </div>
-                        <div class="swiper-slide" style="background: url(./images/index-bed.jpg) no-repeat center;background-size: cover;">
-                            <!-- <img src="./images/block-list.jpg" alt=""> -->
-                        </div>
-                        <div class="swiper-slide" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                            <!-- <img src="./images/block-list.jpg" alt=""> -->
-                        </div>
-                        <div class="swiper-slide" style="background: url(./images/block-list.jpg) no-repeat center;background-size: cover;">
-                            <!-- <img src="./images/block-list.jpg" alt=""> -->
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev swiper-button-black"></div>
-                    <div class="swiper-button-next swiper-button-black"></div>
-                </div>
-                <!-- 下方滚动栏end -->
-                <script language="javascript">
-                    var imgRight = 53;
-                    if (document.documentElement.clientWidth <= 1280) imgRight = 18;
-                    if (document.documentElement.clientWidth <= 880) imgRight = 10;
-                    if (document.documentElement.clientWidth <= 880) imgRight = 2;
-                    if (document.documentElement.clientWidth <= 750) imgRight = 18 / document.documentElement.clientWidth * 100;
-                    var mySwiper = new Swiper('.swiper-container', {
-                        slidesPerView: 4,
-                        spaceBetween: imgRight,
-                        navigation: {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
-                        },
-                    });
-                    var myContent = new Swiper('.details-content', {
-                        simulateTouch: false,//禁止鼠标模拟
-                        // 2018-5-16添加start
-                        autoHeight: true, //高度随内容变化
-                        on: {
-                            slideChangeTransitionStart: function () {
-                                //你的事件
-                                var IndexLingth = this.activeIndex;
-                                console.log(IndexLingth)
-                                mySwiper.slideTo(IndexLingth);
-                                $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
-                            },
-                        },
-                        // 2018-5-16添加end
-                    });
-                    myContent.slideTo($('.swiper-container .active').index());
-                    $('.swiper-container .swiper-slide').on('click', function () {
-                        $(this).addClass('active').siblings('.swiper-slide').removeClass('active');
-                        var IndexLingth = $('.swiper-container .active').index();
-                        myContent.slideTo(IndexLingth);
-                    });
-                    $(".product-details-date .swiper-container .swiper-button-next").on('click', function () {
-                        var IndexLingth = $('.swiper-container .active').index() + 1;
-                        myContent.slideTo(IndexLingth);
-                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
-                    });
-                    $(".product-details-date .swiper-container .swiper-button-prev").on('click', function () {
-                        var IndexLingth = $('.swiper-container .active').index() - 1;
-                        myContent.slideTo(IndexLingth);
-                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
-                    })
-                    $(".product-details-date .details-content .swiper-button-next").on('click', function () {
-                        var IndexLingth = $('.swiper-container .active').index() + 1;
-                        mySwiper.slideTo(IndexLingth);
-                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
-                    });
-                    $(".product-details-date .details-content .swiper-button-prev").on('click', function () {
-                        var IndexLingth = $('.swiper-container .active').index() - 1;
-                        mySwiper.slideTo(IndexLingth);
-                        $('.product-details-date .swiper-container .swiper-slide').eq(IndexLingth).addClass('active').siblings('.swiper-slide').removeClass('active');
-                    })
-                </script>
-            </div>
-        </div>
+
+    <!-- 编辑器填充处start -->
+    <div class="product-content content-filling" style="padding: 30px 0;">
+        模板填充处
     </div>
+    <!-- 编辑器填充处end -->
+    
     <!-- footer底部start -->
     <div class="footer">
         <ul class="stair-menu clear">

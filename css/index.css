@@ -28,11 +28,11 @@
   bottom: 40px;
 }
 .swiper-pagination-bullet {
-  height: 6px;
-  width: 30px;
+  height: 4px;
+  width: 60px;
   opacity: 1;
   background-color: #FFF;
-  border-radius: 3px;
+  border-radius: 0;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -52,7 +52,7 @@
   left: 39px;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 8px;
+  margin: 0;
 }
 .swiper-pagination-bullet-active {
   background-color: #000;
@@ -60,7 +60,7 @@
 .index-block-list {
   background-color: #FFF;
   position: reltaive;
-  padding-top: 112px;
+  padding-top: 70px;
 }
 .index-block-list .index-product-list {
   width: 1400px;
@@ -153,6 +153,7 @@
   opacity: 1;
   padding: 0 26px;
   color: #7f7f7f;
+  box-sizing: border-box;
 }
 .index-list-bg .index-product-list .list li a:hover .text {
   color: #000;

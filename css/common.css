@@ -114,6 +114,7 @@ body {
   right: 0;
   top: 0;
   z-index: 999;
+  box-shadow: 0 0 5px 1px #e6e6e6;
 }
 .common-head-menu .menu-nav {
   width: 100%;
@@ -132,7 +133,7 @@ body {
 .common-head-menu .stair-menu li {
   float: left;
   position: relative;
-  padding-left: 110px;
+  padding-left: 70px;
   height: 100%;
 }
 .common-head-menu .stair-menu li:first-child {
@@ -143,7 +144,7 @@ body {
 }
 .common-head-menu .stair-menu li a {
   color: #000;
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
 }
 .common-head-menu .stair-menu li a:hover {
@@ -151,7 +152,7 @@ body {
   text-decoration: none;
 }
 .common-head-menu .stair-menu li.active a {
-  color: #000;
+  color: #26563f;
 }
 .common-head-menu .stair-menu li.active a::before {
   content: "";
@@ -160,7 +161,7 @@ body {
   border-top: 5px solid #26563f;
   left: 0;
   right: 0;
-  bottom: -56px;
+  bottom: -57px;
 }
 .common-head-menu .stair-menu li .second-menu {
   display: none;
@@ -171,13 +172,14 @@ body {
   margin-left: -146px;
   z-index: 99;
   padding: 18px 30px;
+  box-shadow: 0 0 2px #e6e6e6;
 }
 .common-head-menu .stair-menu li .second-menu a {
   display: block;
   width: 340px;
   font-size: 20px;
   position: relative;
-  line-height: 112px;
+  line-height: 98px;
   color: #000;
   opacity: .5;
   text-align: left;
@@ -230,7 +232,7 @@ body {
   border-top: 5px solid #26563f;
   left: 0;
   right: 0;
-  bottom: -56px;
+  bottom: -57px;
 }
 .footer {
   background-color: #FFF;
@@ -250,7 +252,7 @@ body {
 }
 .footer .stair-menu li a {
   color: #000;
-  font-size: 22px;
+  font-size: 20px;
   display: block;
   margin-bottom: 46px;
 }
@@ -258,7 +260,7 @@ body {
   text-decoration: none;
 }
 .footer .stair-menu li .second-menu a {
-  font-size: 18px;
+  font-size: 16px;
   opacity: .5;
   line-height: 2.6em;
   margin-bottom: 0;

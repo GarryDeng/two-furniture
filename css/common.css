@@ -162,7 +162,7 @@ body {
   border-top: 5px solid #26563f;
   left: 0;
   right: 0;
-  bottom: -44px;
+  bottom: -40px;
 }
 .common-head-menu .stair-menu li .second-menu {
   display: none;
@@ -233,7 +233,7 @@ body {
   border-top: 5px solid #26563f;
   left: 0;
   right: 0;
-  bottom: -44px;
+  bottom: -40px;
 }
 .footer {
   background-color: #FFF;
@@ -248,8 +248,10 @@ body {
   border-bottom: 3px solid #f4f0ea;
 }
 .footer .stair-menu li {
-  width: 198px;
+  width: 98px;
   float: left;
+  margin-right: 100px;
+  text-align: center;
 }
 .footer .stair-menu li a {
   color: #000;
@@ -271,13 +273,15 @@ body {
   opacity: 1;
 }
 .footer .stair-menu li:first-child {
-  width: 178px;
+  width: 58px;
+  text-align: left;
 }
 .footer .stair-menu li:last-child {
   float: right;
   width: 120px;
   position: relative;
   overflow: hidden;
+  margin-right: 0;
 }
 .footer .stair-menu li:last-child .img-code {
   width: 120px;
@@ -291,6 +295,7 @@ body {
   color: #000;
   letter-spacing: 16px;
   line-height: 1.4em;
+  text-align: left;
 }
 .footer .copyright-message {
   width: 1400px;
@@ -343,10 +348,10 @@ body {
     width: 1180px;
   }
   .footer .stair-menu li {
-    width: 160px;
+    margin-right: 62px;
   }
   .footer .stair-menu li:first-child {
-    width: 136px;
+    margin-right: 50px;
   }
   .footer .copyright-message {
     width: 1180px;
@@ -393,10 +398,10 @@ body {
     width: 830px;
   }
   .footer .stair-menu li {
-    width: 118px;
+    margin-right: 20px;
   }
   .footer .stair-menu li:first-child {
-    width: 86px;
+    margin-right: 36px;
   }
   .footer .copyright-message {
     width: 830px;
@@ -419,15 +424,16 @@ body {
   }
   .footer .stair-menu {
     width: 750px;
+    padding-bottom: 39px;
   }
   .footer .stair-menu li {
-    width: 90px;
+    margin-right: 8px;
   }
   .footer .stair-menu li a {
     font-size: 18px;
   }
   .footer .stair-menu li:first-child {
-    width: 66px;
+    margin-right: 0;
   }
   .footer .stair-menu li .second-menu a {
     font-size: 16px;
@@ -446,6 +452,14 @@ body {
   * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .product-banner {
+    width: 10rem;
+    margin: 0 auto;
+  }
+  .product-banner img {
+    display: block;
+    width: 100%;
   }
   .common-height-top {
     height: 1.6rem;

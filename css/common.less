@@ -127,7 +127,7 @@ body {
             border-top: 5px solid #26563f;
             left: 0;
             right: 0;
-            bottom: -44px;
+            bottom: -40px;
           }
         }
       }
@@ -204,7 +204,7 @@ body {
             border-top: 5px solid #26563f;
             left: 0;
             right: 0;
-            bottom: -44px;
+            bottom: -40px;
           }
         }
       }
@@ -223,8 +223,10 @@ body {
     padding-bottom: 90px;
     border-bottom: 3px solid #f4f0ea;
     li{
-      width: 198px;
+      width: 98px;
       float: left;
+      margin-right: 100px;
+      text-align: center;
       a{
         color: #000;
         font-size: 20px;
@@ -247,13 +249,15 @@ body {
         }
       }
       &:first-child{
-        width: 178px;
+        width: 58px;
+        text-align: left;
       }
       &:last-child{
         float: right;
         width: 120px;
         position: relative;
         overflow: hidden;
+        margin-right: 0;
         .img-code{
           width: 120px;
           height: 120px;
@@ -266,6 +270,7 @@ body {
           color: #000;
           letter-spacing: 16px;
           line-height: 1.4em;
+          text-align: left;
         }
       }
     }
@@ -324,9 +329,9 @@ body {
     .stair-menu{
       width: 1180px;
       li{
-        width: 160px;
+        margin-right: 62px;
         &:first-child{
-          width: 136px;
+          margin-right: 50px;
         }
       }
     }
@@ -394,9 +399,9 @@ body {
     .stair-menu{
       width: 830px;
       li{
-        width: 118px;
+        margin-right: 20px;
         &:first-child{
-          width: 86px;
+          margin-right: 36px;
         }
       }
     }
@@ -425,13 +430,16 @@ body {
   .footer{
     .stair-menu{
       width: 750px;
+      padding-bottom: 39px;
       li{
-        width: 90px;
+        // width: 90px;
+        margin-right: 8px;
         a{
           font-size: 18px;
         }
         &:first-child{
-          width: 66px;
+          // width: 66px;
+          margin-right: 0;
         }
         .second-menu a{
           font-size: 16px;
@@ -454,6 +462,14 @@ body {
   *{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .product-banner{
+    width: 10rem;
+    margin: 0 auto;
+    img{
+      display: block;
+      width: 100%;
+    }
   }
   .common-height-top{
     height: 120/75rem;

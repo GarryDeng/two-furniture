@@ -15,6 +15,7 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 a:hover {
+  text-decoration: none;
   text-decoration: underline;
 }
 abbr[title],acronym[title] {
@@ -68,11 +69,11 @@ body {
 // 导航栏菜单
 .common-height-top{
   position: relative;
-  height: 140px;
+  height: 110px;
 }
 .common-head-menu{
-  height: 140px;
-  line-height: 140px;
+  height: 110px;
+  line-height: 110px;
   text-align: center;
   background-color: #FFF;
   position: fixed;
@@ -88,9 +89,9 @@ body {
     height: 100%;
     // position: relative;
     .logo{
-      padding-top: 30px;
+      padding-top: 25px;
       padding-left: 30px;
-      height: 80px;
+      height: 60px;
     }
   }
   .stair-menu{
@@ -126,26 +127,26 @@ body {
             border-top: 5px solid #26563f;
             left: 0;
             right: 0;
-            bottom: -57px;
+            bottom: -44px;
           }
         }
       }
       .second-menu{
         display: none;
         position: absolute;
-        top: 140px;
+        top: 110px;
         background-color: #fff;
         left: 50%;
         margin-left: -146px;
         z-index: 99;
-        padding: 18px 30px;
+        padding: 8px 30px;
         box-shadow: 0 0 2px #e6e6e6;
         a{
           display: block;
           width: 340px;
           font-size: 20px;
           position: relative;
-          line-height: 98px;
+          line-height: 78px;
           color: #000;
           opacity: .5;
           text-align: left;
@@ -203,7 +204,7 @@ body {
             border-top: 5px solid #26563f;
             left: 0;
             right: 0;
-            bottom: -57px;
+            bottom: -44px;
           }
         }
       }
@@ -250,12 +251,12 @@ body {
       }
       &:last-child{
         float: right;
-        width: 140px;
+        width: 120px;
         position: relative;
         overflow: hidden;
         .img-code{
-          width: 140px;
-          height: 140px;
+          width: 120px;
+          height: 120px;
           display: block;
         }
         .attention{
@@ -263,7 +264,7 @@ body {
           padding-top: 10px;
           font-size: 18px;
           color: #000;
-          letter-spacing: 20px;
+          letter-spacing: 16px;
           line-height: 1.4em;
         }
       }
@@ -272,8 +273,8 @@ body {
   .copyright-message{
     width: 1400px;
     margin: 0 auto;
-    padding-top: 74px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 60px;
     a{
       color: #000;
       font-size: 14px;
@@ -299,17 +300,6 @@ body {
         margin-left: 66px;
       }
     }
-  }
-}
-// 背景图
-.product-banner{
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  // top: -2px;
-  .product-banner-img{
-    display: block;
-    width: 100%;
   }
 }
 @media screen and (max-width: 1536px) {
@@ -342,25 +332,27 @@ body {
     }
     .copyright-message{
       width: 1180px;
-      padding-bottom: 39px;
+      // padding-bottom: 39px;
       a{
-        display: block;
-        text-align: center;
-        width: 100%;
+        // display: block;
+        // text-align: center;
+        // width: 100%;
         &.phone,&.mail{
-          width: 50%;
+          // width: 50%;
+          // padding: 0;
+          // margin: 0;
+          // background: transparent;
+          // margin-bottom: 36px;
           padding: 0;
-          margin: 0;
           background: transparent;
-          margin-bottom: 36px;
         }
-        &.phone{
-          text-indent: 120px;
-        }
-        &.mail{
-          text-align: left;
-          text-indent: 97px;
-        }
+        // &.phone{
+        //   text-indent: 120px;
+        // }
+        // &.mail{
+        //   text-align: left;
+        //   text-indent: 97px;
+        // }
       }
     }
   }
@@ -412,11 +404,15 @@ body {
       width: 830px;
       padding-top: 39px;
       a{
+        font-size: 12px;
         &.phone{
-          text-indent: 0;
+          // text-indent: 0;
+          font-size: 12px;
         }
         &.mail{
-          text-indent: 77px;
+          // text-indent: 77px;
+          font-size: 12px;
+          margin-left: 20px;
         }
       }
     }
@@ -444,8 +440,12 @@ body {
     }
     .copyright-message{
       width: 750px;
+      a.phone{
+        display: none;
+        // text-indent: 66px;
+      }
       a.mail{
-        text-indent: 66px;
+        margin-left: 0;
       }
     }
   }
@@ -627,14 +627,20 @@ body {
       padding-bottom: 39/75rem;
       a{
         font-size: 14/75rem;
+        width: 100%;
+        display: block;
+        text-align: center;
         &.phone,&.mail{
           margin-bottom: 36/75rem;
           padding-bottom: 64/75rem;
           border-bottom: 1px solid #f4f0ea;
           line-height: .3rem;
+          width: 50%;
+          float: left;
         }
         &.phone{
           font-size: 21/75rem;
+          display: block;
         }
         &.mail{
           font-size: 18/75rem;

@@ -43,6 +43,7 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 a:hover {
+  text-decoration: none;
   text-decoration: underline;
 }
 abbr[title],
@@ -102,11 +103,11 @@ body {
 }
 .common-height-top {
   position: relative;
-  height: 140px;
+  height: 110px;
 }
 .common-head-menu {
-  height: 140px;
-  line-height: 140px;
+  height: 110px;
+  line-height: 110px;
   text-align: center;
   background-color: #FFF;
   position: fixed;
@@ -123,9 +124,9 @@ body {
   height: 100%;
 }
 .common-head-menu .menu-nav .logo {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-left: 30px;
-  height: 80px;
+  height: 60px;
 }
 .common-head-menu .stair-menu {
   height: 100%;
@@ -161,17 +162,17 @@ body {
   border-top: 5px solid #26563f;
   left: 0;
   right: 0;
-  bottom: -57px;
+  bottom: -44px;
 }
 .common-head-menu .stair-menu li .second-menu {
   display: none;
   position: absolute;
-  top: 140px;
+  top: 110px;
   background-color: #fff;
   left: 50%;
   margin-left: -146px;
   z-index: 99;
-  padding: 18px 30px;
+  padding: 8px 30px;
   box-shadow: 0 0 2px #e6e6e6;
 }
 .common-head-menu .stair-menu li .second-menu a {
@@ -179,7 +180,7 @@ body {
   width: 340px;
   font-size: 20px;
   position: relative;
-  line-height: 98px;
+  line-height: 78px;
   color: #000;
   opacity: .5;
   text-align: left;
@@ -232,7 +233,7 @@ body {
   border-top: 5px solid #26563f;
   left: 0;
   right: 0;
-  bottom: -57px;
+  bottom: -44px;
 }
 .footer {
   background-color: #FFF;
@@ -274,13 +275,13 @@ body {
 }
 .footer .stair-menu li:last-child {
   float: right;
-  width: 140px;
+  width: 120px;
   position: relative;
   overflow: hidden;
 }
 .footer .stair-menu li:last-child .img-code {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   display: block;
 }
 .footer .stair-menu li:last-child .attention {
@@ -288,14 +289,14 @@ body {
   padding-top: 10px;
   font-size: 18px;
   color: #000;
-  letter-spacing: 20px;
+  letter-spacing: 16px;
   line-height: 1.4em;
 }
 .footer .copyright-message {
   width: 1400px;
   margin: 0 auto;
-  padding-top: 74px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 .footer .copyright-message a {
   color: #000;
@@ -321,15 +322,6 @@ body {
   background: url(../images/icon/mail.png) no-repeat left center;
   background-size: 30px auto;
   margin-left: 66px;
-}
-.product-banner {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.product-banner .product-banner-img {
-  display: block;
-  width: 100%;
 }
 @media screen and (max-width: 1536px) {
   .common-head-menu .menu-nav {
@@ -358,27 +350,11 @@ body {
   }
   .footer .copyright-message {
     width: 1180px;
-    padding-bottom: 39px;
-  }
-  .footer .copyright-message a {
-    display: block;
-    text-align: center;
-    width: 100%;
   }
   .footer .copyright-message a.phone,
   .footer .copyright-message a.mail {
-    width: 50%;
     padding: 0;
-    margin: 0;
     background: transparent;
-    margin-bottom: 36px;
-  }
-  .footer .copyright-message a.phone {
-    text-indent: 120px;
-  }
-  .footer .copyright-message a.mail {
-    text-align: left;
-    text-indent: 97px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -426,11 +402,15 @@ body {
     width: 830px;
     padding-top: 39px;
   }
+  .footer .copyright-message a {
+    font-size: 12px;
+  }
   .footer .copyright-message a.phone {
-    text-indent: 0;
+    font-size: 12px;
   }
   .footer .copyright-message a.mail {
-    text-indent: 77px;
+    font-size: 12px;
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 888px) {
@@ -455,8 +435,11 @@ body {
   .footer .copyright-message {
     width: 750px;
   }
+  .footer .copyright-message a.phone {
+    display: none;
+  }
   .footer .copyright-message a.mail {
-    text-indent: 66px;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 750px) {
@@ -629,6 +612,9 @@ body {
   }
   .footer .copyright-message a {
     font-size: 0.18666667rem;
+    width: 100%;
+    display: block;
+    text-align: center;
   }
   .footer .copyright-message a.phone,
   .footer .copyright-message a.mail {
@@ -636,9 +622,12 @@ body {
     padding-bottom: 0.85333333rem;
     border-bottom: 1px solid #f4f0ea;
     line-height: .3rem;
+    width: 50%;
+    float: left;
   }
   .footer .copyright-message a.phone {
     font-size: 0.28rem;
+    display: block;
   }
   .footer .copyright-message a.mail {
     font-size: 0.24rem;

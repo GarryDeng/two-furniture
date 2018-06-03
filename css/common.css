@@ -144,25 +144,30 @@ body {
   display: none;
 }
 .common-head-menu .stair-menu li a {
-  color: #000;
-  font-size: 20px;
+  color: #666;
+  font-size: 18px;
   position: relative;
+  display: block;
 }
-.common-head-menu .stair-menu li a:hover {
-  color: #26563f;
-  text-decoration: none;
-}
-.common-head-menu .stair-menu li.active a {
-  color: #26563f;
-}
-.common-head-menu .stair-menu li.active a::before {
+.common-head-menu .stair-menu li a::before {
   content: "";
   position: absolute;
-  bottom: 0;
   border-top: 5px solid #26563f;
   left: 0;
   right: 0;
-  bottom: -41px;
+  bottom: 0;
+  opacity: 0;
+  transition: all .3s;
+}
+.common-head-menu .stair-menu li:hover a {
+  color: #000;
+  text-decoration: none;
+}
+.common-head-menu .stair-menu li:hover a::before {
+  opacity: 1;
+}
+.common-head-menu .stair-menu li:hover .second-menu {
+  display: block;
 }
 .common-head-menu .stair-menu li .second-menu {
   display: none;
@@ -178,7 +183,7 @@ body {
 .common-head-menu .stair-menu li .second-menu a {
   display: block;
   width: 340px;
-  font-size: 20px;
+  font-size: 14px;
   position: relative;
   line-height: 78px;
   color: #000;
@@ -222,18 +227,6 @@ body {
 }
 .common-head-menu .stair-menu li .second-menu a:first-child::after {
   display: none;
-}
-.common-head-menu .stair-menu li:hover .second-menu {
-  display: block;
-}
-.common-head-menu .stair-menu li:hover a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  border-top: 5px solid #26563f;
-  left: 0;
-  right: 0;
-  bottom: -41px;
 }
 .footer {
   background-color: #FFF;
@@ -332,7 +325,7 @@ body {
 }
 @media screen and (max-width: 1536px) {
   .common-head-menu .menu-nav {
-    width: 1180px;
+    width: 1080px;
   }
   .common-head-menu .menu-nav .logo {
     padding-left: 0;
@@ -347,7 +340,7 @@ body {
     margin-left: -172px;
   }
   .footer .stair-menu {
-    width: 1180px;
+    width: 1080px;
   }
   .footer .stair-menu li {
     margin-right: 62px;
@@ -356,7 +349,7 @@ body {
     margin-right: 50px;
   }
   .footer .copyright-message {
-    width: 1180px;
+    width: 1080px;
   }
   .footer .copyright-message a.phone,
   .footer .copyright-message a.mail {

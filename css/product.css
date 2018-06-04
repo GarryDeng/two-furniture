@@ -20,17 +20,18 @@
   padding-top: 70px;
   position: relative;
   padding-bottom: 56px;
+  width: 1420px;
 }
 .product-content .product-list .title {
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: 16px;
   line-height: 1em;
 }
 .product-content .product-list .list a {
-  font-size: 20px;
+  font-size: 16px;
   color: #000;
   display: inline-block;
-  margin: 0 39px;
+  margin: 0 26px;
   line-height: 40px;
   position: relative;
 }
@@ -74,8 +75,8 @@
 .product-content .product-content-list .content a p {
   padding-top: 13px;
   line-height: 62px;
-  font-size: 20px;
-  border-bottom: 2px solid #202020;
+  font-size: 18px;
+  border-bottom: 1px solid #666;
   opacity: .5;
   color: #000;
   width: 100%;
@@ -83,6 +84,7 @@
   position: relative;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: all .3s;
 }
 .product-content .product-content-list .content a:hover {
   text-decoration: none;
@@ -195,13 +197,19 @@
     width: 1080px;
   }
   .product-content .product-list {
-    width: 1110px;
+    width: 1100px;
   }
   .product-content .product-content-list {
     width: 1140px;
   }
   .product-content .product-content-list .content a {
-    margin-right: 56px;
+    width: 240px;
+  }
+  .product-content .product-content-list .content a i {
+    height: 225px;
+  }
+  .product-content .product-content-list .content a p {
+    font-size: 16px;
   }
   .product-content .product-content-list .product-details-date {
     width: 1080px;
@@ -224,7 +232,10 @@
     padding-bottom: 30px;
   }
   .product-content .product-content-list .content a {
-    margin-right: 128px;
+    margin-right: 24px;
+  }
+  .product-content .product-content-list .content a p {
+    padding-top: 0;
   }
   .product-content .product-content-list .product-details-date {
     width: 769px;

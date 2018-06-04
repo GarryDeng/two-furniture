@@ -192,6 +192,7 @@ body {
   text-indent: 88px;
   border-bottom: 1px solid #dcd9d9;
   background: url(../images/right-arrow.png) no-repeat 303px center;
+  background-size: 8px auto;
   transition: all .2s;
 }
 .common-head-menu .stair-menu li .second-menu a img {
@@ -248,7 +249,7 @@ body {
 }
 .footer .stair-menu li a {
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   display: block;
   margin-bottom: 46px;
 }
@@ -256,7 +257,7 @@ body {
   text-decoration: none;
 }
 .footer .stair-menu li .second-menu a {
-  font-size: 16px;
+  font-size: 14px;
   opacity: .5;
   line-height: 2.6em;
   margin-bottom: 0;
@@ -295,7 +296,7 @@ body {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 60px;
-  line-height: 18px;
+  line-height: 26px;
 }
 .footer .copyright-message a {
   color: #000;
@@ -351,10 +352,19 @@ body {
   .footer .copyright-message {
     width: 1080px;
   }
-  .footer .copyright-message a.phone,
+  .footer .copyright-message a {
+    font-size: 12px;
+  }
+  .footer .copyright-message a.phone {
+    font-size: 14px;
+    background-size: 18px auto;
+    padding-left: 28px;
+  }
   .footer .copyright-message a.mail {
-    padding: 0;
-    background: transparent;
+    margin-left: 20px;
+    background-size: 18px auto;
+    padding-left: 28px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 1280px) {

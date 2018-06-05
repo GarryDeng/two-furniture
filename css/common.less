@@ -408,13 +408,13 @@ body {
         a{
           font-size: 20px;
         }
-        &.active,&:hover{
-          a{
-            &::before{
-              bottom: -38px;
-            }
-          }
-        }
+        // &.active,&:hover{
+        //   a{
+        //     &::before{
+        //       bottom: -38px;
+        //     }
+        //   }
+        // }
         .second-menu{
           top: 100px;
           margin-left: -185px;
@@ -434,8 +434,9 @@ body {
       }
     }
     .copyright-message{
-      width: 830px;
+      width: 886px;
       padding-top: 39px;
+      transform: scale(.94);
       a{
         font-size: 12px;
         &.phone{
@@ -475,14 +476,17 @@ body {
       }
     }
     .copyright-message{
-      width: 750px;
-      a.phone{
-        display: none;
-        // text-indent: 66px;
-      }
-      a.mail{
-        margin-left: 0;
-      }
+      width: 886px;
+      transform: scale(.839999);
+      position: relative;
+      left: -8px;
+      // a.phone{
+      //   display: none;
+      //   // text-indent: 66px;
+      // }
+      // a.mail{
+      //   margin-left: 0;
+      // }
     }
   }
 }
@@ -669,6 +673,8 @@ body {
       padding-top: 0;
       width: 10rem;
       padding-bottom: 39/75rem;
+      transform: scale(1);
+      left: 0;
       a{
         font-size: 14/75rem;
         width: 100%;

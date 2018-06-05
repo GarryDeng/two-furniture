@@ -388,10 +388,6 @@ body {
   .common-height-top .common-head-menu .stair-menu li a {
     font-size: 20px;
   }
-  .common-height-top .common-head-menu .stair-menu li.active a::before,
-  .common-height-top .common-head-menu .stair-menu li:hover a::before {
-    bottom: -38px;
-  }
   .common-height-top .common-head-menu .stair-menu li .second-menu {
     top: 100px;
     margin-left: -185px;
@@ -409,8 +405,9 @@ body {
     margin-right: 36px;
   }
   .footer .copyright-message {
-    width: 830px;
+    width: 886px;
     padding-top: 39px;
+    transform: scale(0.94);
   }
   .footer .copyright-message a {
     font-size: 12px;
@@ -444,13 +441,10 @@ body {
     font-size: 16px;
   }
   .footer .copyright-message {
-    width: 750px;
-  }
-  .footer .copyright-message a.phone {
-    display: none;
-  }
-  .footer .copyright-message a.mail {
-    margin-left: 0;
+    width: 886px;
+    transform: scale(0.839999);
+    position: relative;
+    left: -8px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -628,6 +622,8 @@ body {
     padding-top: 0;
     width: 10rem;
     padding-bottom: 0.52rem;
+    transform: scale(1);
+    left: 0;
   }
   .footer .copyright-message a {
     font-size: 0.18666667rem;

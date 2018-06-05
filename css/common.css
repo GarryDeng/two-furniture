@@ -537,11 +537,11 @@ body {
   }
   .common-height-top .common-head-menu .menu-nav .stair-menu li.next-level {
     background: url(../images/down-open.png) no-repeat 9.1rem 0.53333333rem;
-    background-size: 0.73333333rem auto;
+    background-size: 0.52rem auto;
   }
   .common-height-top .common-head-menu .menu-nav .stair-menu li.click-active {
     background: url(../images/down-shut.png) no-repeat 9.2rem 0.53333333rem;
-    background-size: 0.46666667rem auto;
+    background-size: 0.34666667rem auto;
   }
   .common-height-top .common-head-menu .menu-nav .stair-menu li.click-active::before {
     display: none;
@@ -640,17 +640,24 @@ body {
     margin-bottom: 0.48rem;
     padding-bottom: 0.85333333rem;
     border-bottom: 1px solid #f4f0ea;
-    line-height: .3rem;
+    line-height: .38rem;
     width: 50%;
     float: left;
   }
   .footer .copyright-message a.phone {
-    font-size: 0.28rem;
+    font-size: 0.24rem;
     display: block;
+    background: url(../images/icon/call.png) no-repeat 0.6rem top;
+    background-size: 0.4rem auto;
+    text-align: left;
+    padding-left: 1.22rem;
   }
   .footer .copyright-message a.mail {
     font-size: 0.24rem;
     text-indent: 0;
-    text-align: center;
+    text-align: right;
+    background: url(../images/icon/mail.png) no-repeat 0.68rem top;
+    background-size: 0.4rem auto;
+    padding-right: .6rem;
   }
 }

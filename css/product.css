@@ -243,6 +243,10 @@
   .product-content .product-content-list .product-details-date .swiper-container {
     width: 660px;
   }
+  .product-content .product-content-list .product-details-date .swiper-container .swiper-slide {
+    height: 106px;
+    line-height: 106px;
+  }
 }
 @media screen and (max-width: 950px) {
   .product-content {
@@ -264,6 +268,10 @@
     width: 661px;
     padding: 24px;
   }
+  .product-content .product-content-list .product-details-date .swiper-container .swiper-slide {
+    height: 115px;
+    line-height: 115px;
+  }
   .product-content .list-more-message {
     position: relative;
     left: -45px;
@@ -279,6 +287,10 @@
   .product-details-date .swiper-container::after,
   .product-details-date .swiper-container::before {
     width: 26px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-size: 18px auto;
   }
 }
 @media screen and (max-width: 750px) {
@@ -459,5 +471,9 @@
   }
   .product-details-date .swiper-button-black {
     display: none;
+  }
+  .product-content .product-content-list .product-details-date .swiper-container .swiper-slide {
+    height: 1.651917404129794rem;
+    line-height: 1.651917404129794rem;
   }
 }

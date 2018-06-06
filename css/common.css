@@ -386,7 +386,7 @@ body {
     padding-left: 24px;
   }
   .common-height-top .common-head-menu .stair-menu li a {
-    font-size: 20px;
+    font-size: 16px;
   }
   .common-height-top .common-head-menu .stair-menu li .second-menu {
     top: 100px;
@@ -394,6 +394,8 @@ body {
   }
   .footer {
     padding-top: 88px;
+    width: 830px;
+    margin: 0 auto;
   }
   .footer .stair-menu {
     width: 830px;
@@ -405,9 +407,11 @@ body {
     margin-right: 36px;
   }
   .footer .copyright-message {
-    width: 886px;
+    width: 920px;
     padding-top: 39px;
-    transform: scale(0.94);
+    transform: scale(0.9);
+    margin: 0;
+    margin-left: -45px;
   }
   .footer .copyright-message a {
     font-size: 12px;
@@ -424,6 +428,9 @@ body {
   .common-height-top .common-head-menu .menu-nav {
     width: 750px;
   }
+  .footer {
+    width: 750px;
+  }
   .footer .stair-menu {
     width: 750px;
     padding-bottom: 39px;
@@ -432,7 +439,7 @@ body {
     margin-right: 8px;
   }
   .footer .stair-menu li a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .footer .stair-menu li:first-child {
     margin-right: 0;
@@ -441,10 +448,8 @@ body {
     font-size: 16px;
   }
   .footer .copyright-message {
-    width: 886px;
-    transform: scale(0.839999);
-    position: relative;
-    left: -8px;
+    transform: scale(0.79);
+    margin-left: -85px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -614,6 +619,7 @@ body {
   }
   .footer {
     padding-top: 0.93333333rem;
+    width: 10rem;
   }
   .footer .stair-menu {
     display: none;
@@ -623,7 +629,7 @@ body {
     width: 10rem;
     padding-bottom: 0.52rem;
     transform: scale(1);
-    left: 0;
+    margin: 0;
   }
   .footer .copyright-message a {
     font-size: 0.18666667rem;
